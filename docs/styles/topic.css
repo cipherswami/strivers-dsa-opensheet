@@ -12,20 +12,23 @@ h1 .progress {
   color: var(--muted);
 }
 
-/* ---------- Table ---------- */
+/* ---------- Table Wrapper ---------- */
 
 .topic-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* critical for alignment */
+  table-layout: fixed;
   font-size: 0.95rem;
 }
+
+/* ---------- Cells ---------- */
 
 .topic-table th,
 .topic-table td {
   padding: 12px 10px;
   border-bottom: 1px solid var(--border);
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 /* ---------- Alignment ---------- */
@@ -110,4 +113,90 @@ h1 .progress {
 
 .topic-table tbody tr:hover {
   background: rgba(148, 163, 184, 0.05);
+}
+
+/* ================================================= */
+/* ================== TABLET ======================= */
+/* ================================================= */
+
+@media (max-width: 1024px) {
+  h1 .progress {
+    font-size: 1.2rem;
+  }
+
+  .topic-table {
+    font-size: 0.9rem;
+  }
+
+  .topic-table th,
+  .topic-table td {
+    padding: 10px 8px;
+  }
+}
+
+/* ================================================= */
+/* ================== MOBILE ======================= */
+/* ================================================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 32px 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h1 .progress {
+    font-size: 1rem;
+  }
+
+  /* Allow horizontal scroll */
+  .topic-table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal; /* IMPORTANT */
+  }
+
+  /* Remove fixed widths on mobile */
+  .topic-table th,
+  .topic-table td {
+    white-space: normal; /* FIX overlap */
+    padding: 8px 6px;
+    font-size: 0.85rem;
+  }
+
+  /* Let browser decide widths */
+  .topic-table th {
+    width: auto !important;
+  }
+
+  /* Reduce link width */
+  .topic-table td a {
+    min-width: auto;
+    padding: 2px 4px;
+  }
+}
+
+/* ================================================= */
+/* ================== SMALL MOBILE ================= */
+/* ================================================= */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.15rem;
+  }
+
+  h1 .progress {
+    font-size: 0.95rem;
+  }
+
+  .topic-table {
+    font-size: 0.85rem;
+  }
+
+  .topic-table th,
+  .topic-table td {
+    padding: 6px 4px;
+  }
 }
