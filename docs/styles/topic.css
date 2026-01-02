@@ -1,0 +1,113 @@
+/* ---------- Topic Heading ---------- */
+
+h1 {
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+h1 .progress {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* ---------- Table ---------- */
+
+.topic-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* critical for alignment */
+  font-size: 0.95rem;
+}
+
+.topic-table th,
+.topic-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+/* ---------- Alignment ---------- */
+
+.topic-table th:nth-child(1),
+.topic-table td:nth-child(1) {
+  text-align: left;
+}
+
+.topic-table th:nth-child(n + 2),
+.topic-table td:nth-child(n + 2) {
+  text-align: center;
+}
+
+/* ---------- Column widths ---------- */
+
+.topic-table th:nth-child(1) {
+  width: 24%;
+} /* Name */
+.topic-table th:nth-child(2) {
+  width: 14%;
+} /* Video */
+.topic-table th:nth-child(3) {
+  width: 14%;
+} /* Resource */
+.topic-table th:nth-child(4) {
+  width: 14%;
+} /* Reference */
+.topic-table th:nth-child(5) {
+  width: 14%;
+} /* Practice */
+.topic-table th:nth-child(6) {
+  width: 10%;
+} /* Difficulty */
+.topic-table th:nth-child(7) {
+  width: 10%;
+} /* Status */
+
+/* ---------- Header ---------- */
+
+.topic-table th {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ---------- Difficulty badge ---------- */
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge.easy {
+  color: var(--easy);
+}
+.badge.medium {
+  color: var(--medium);
+}
+.badge.hard {
+  color: var(--hard);
+}
+
+/* ---------- Checkbox ---------- */
+
+.topic-table input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ---------- Link consistency ---------- */
+
+.topic-table td a {
+  display: inline-block;
+  min-width: 90px;
+  text-align: center;
+}
+
+/* ---------- Row hover ---------- */
+
+.topic-table tbody tr:hover {
+  background: rgba(148, 163, 184, 0.05);
+}

@@ -1,0 +1,75 @@
+:root {
+  --bg: #0f172a;
+  --fg: #e5e7eb;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --accent: #38bdf8;
+
+  --easy: #22c55e;
+  --medium: #facc15;
+  --hard: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 48px 20px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ---- Typography ---- */
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+/* ---- Links ---- */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Common layout ---- */
+
+.section {
+  max-width: 900px;
+  margin: 0 auto 56px auto;
+}
+
+.context {
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---- Back link ---- */
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
