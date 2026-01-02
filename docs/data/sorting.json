@@ -4,19 +4,19 @@
     "name": "Selection Sort",
     "video": {
       "label": "YouTube (Striver)",
-      "url": "https://www.youtube.com/watch?v=HGk_ypEuS24&t=167s"
+      "url": "https://youtu.be/HGk_ypEuS24?t=167"
     },
     "resource": {
       "label": "TakeUForward",
-      "url": "https://takeuforward.org/arrays/recursive-bubble-sort-algorithm"
+      "url": "https://takeuforward.org/sorting/selection-sort-algorithm/"
     },
     "reference": {
-      "label": "LeetCode",
-      "url": "https://www.geeksforgeeks.org/dsa/selection-sort-algorithm-2/"
+      "label": "",
+      "url": ""
     },
     "practice": {
-      "label": "LeetCode",
-      "url": "https://www.geeksforgeeks.org/problems/selection-sort/1"
+      "label": "",
+      "url": ""
     },
     "difficulty": "Easy",
     "status": false
@@ -26,19 +26,129 @@
     "name": "Bubble Sort",
     "video": {
       "label": "YouTube (Striver)",
-      "url": "https://www.youtube.com/watch?v=HGk_ypEuS24&t=1061s"
+      "url": "https://youtu.be/HGk_ypEuS24?t=1061"
     },
     "resource": {
       "label": "TakeUForward",
-      "url": "https://takeuforward.org/data-structure/bubble-sort-algorithm"
+      "url": "https://takeuforward.org/data-structure/bubble-sort-algorithm/"
     },
     "reference": {
-      "label": "LeetCode",
-      "url": "https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm"
+      "label": "",
+      "url": ""
     },
     "practice": {
-      "label": "LeetCode",
-      "url": "https://www.geeksforgeeks.org/problems/bubble-sort/1"
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "insertion-sort",
+    "name": "Insertion Sort",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/HGk_ypEuS24?t=1900"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/insertion-sort-algorithm/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "merge-sort",
+    "name": "Merge Sort",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/ogjf7ORKfd8"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/merge-sort-algorithm/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "recursive-bubble-sort",
+    "name": "Recursive Bubble Sort",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "recursive-insertion-sort",
+    "name": "Recursive Insertion Sort",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/arrays/recursive-insertion-sort-algorithm/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "quick-sort",
+    "name": "Quick Sort",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/WIrA4YexLRQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/quick-sort-algorithm/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
     },
     "difficulty": "Easy",
     "status": false

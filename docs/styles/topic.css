@@ -1,4 +1,6 @@
-/* ---------- Topic Heading ---------- */
+/* ================================================= */
+/* ================== BASE ========================= */
+/* ================================================= */
 
 h1 {
   margin: 0 0 24px 0;
@@ -12,7 +14,9 @@ h1 .progress {
   color: var(--muted);
 }
 
-/* ---------- Table Wrapper ---------- */
+/* ================================================= */
+/* ================== TABLE ======================== */
+/* ================================================= */
 
 .topic-table {
   width: 100%;
@@ -28,6 +32,13 @@ h1 .progress {
   padding: 12px 10px;
   border-bottom: 1px solid var(--border);
   vertical-align: middle;
+}
+
+/* ---------- Header ---------- */
+
+.topic-table th {
+  color: var(--muted);
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -43,38 +54,57 @@ h1 .progress {
   text-align: center;
 }
 
-/* ---------- Column widths ---------- */
+/* ---------- Column widths (desktop) ---------- */
 
 .topic-table th:nth-child(1) {
-  width: 24%;
+  width: 28%;
 } /* Name */
-.topic-table th:nth-child(2) {
-  width: 14%;
-} /* Video */
-.topic-table th:nth-child(3) {
-  width: 14%;
-} /* Resource */
-.topic-table th:nth-child(4) {
-  width: 14%;
-} /* Reference */
+.topic-table th:nth-child(2),
+.topic-table th:nth-child(3),
+.topic-table th:nth-child(4),
 .topic-table th:nth-child(5) {
-  width: 14%;
-} /* Practice */
-.topic-table th:nth-child(6) {
-  width: 10%;
-} /* Difficulty */
+  width: 12%;
+}
+.topic-table th:nth-child(6),
 .topic-table th:nth-child(7) {
-  width: 10%;
-} /* Status */
-
-/* ---------- Header ---------- */
-
-.topic-table th {
-  color: var(--muted);
-  font-weight: 500;
+  width: 8%;
 }
 
-/* ---------- Difficulty badge ---------- */
+/* ================================================= */
+/* ================== NAME COLUMN ================== */
+/* ================================================= */
+
+/* Allow problem titles to wrap cleanly */
+.topic-table td:nth-child(1) {
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+/* ================================================= */
+/* ================== LINKS ======================== */
+/* ================================================= */
+
+.topic-table td a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.topic-table td a:hover {
+  background: rgba(148, 163, 184, 0.2);
+}
+
+/* ================================================= */
+/* ================== DIFFICULTY =================== */
+/* ================================================= */
 
 .badge {
   display: inline-block;
@@ -94,22 +124,18 @@ h1 .progress {
   color: var(--hard);
 }
 
-/* ---------- Checkbox ---------- */
+/* ================================================= */
+/* ================== CHECKBOX ===================== */
+/* ================================================= */
 
 .topic-table input[type="checkbox"] {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-/* ---------- Link consistency ---------- */
-
-.topic-table td a {
-  display: inline-block;
-  min-width: 90px;
-  text-align: center;
-}
-
-/* ---------- Row hover ---------- */
+/* ================================================= */
+/* ================== HOVER ======================== */
+/* ================================================= */
 
 .topic-table tbody tr:hover {
   background: rgba(148, 163, 184, 0.05);
@@ -151,30 +177,37 @@ h1 .progress {
     font-size: 1rem;
   }
 
-  /* Allow horizontal scroll */
+  /* Horizontal scroll container */
   .topic-table {
     display: block;
     overflow-x: auto;
-    white-space: normal; /* IMPORTANT */
+    -webkit-overflow-scrolling: touch;
   }
 
-  /* Remove fixed widths on mobile */
-  .topic-table th,
-  .topic-table td {
-    white-space: normal; /* FIX overlap */
-    padding: 8px 6px;
-    font-size: 0.85rem;
+  .topic-table thead,
+  .topic-table tbody,
+  .topic-table tr {
+    width: max-content;
   }
 
-  /* Let browser decide widths */
+  /* Remove forced widths */
   .topic-table th {
     width: auto !important;
   }
 
-  /* Reduce link width */
+  /* Left-align everything for readability */
+  .topic-table th,
+  .topic-table td {
+    text-align: left;
+    white-space: normal;
+    font-size: 0.85rem;
+    padding: 8px 6px;
+  }
+
+  /* Compact links */
   .topic-table td a {
-    min-width: auto;
-    padding: 2px 4px;
+    padding: 3px 6px;
+    font-size: 0.75rem;
   }
 }
 

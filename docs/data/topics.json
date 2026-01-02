@@ -1,4 +1,5 @@
 [
   { "id": "basic", "name": "Basic" },
-  { "id": "sorting", "name": "Sorting" }
+  { "id": "sorting", "name": "Sorting" },
+  { "id": "arrays", "name": "Arrays" }
 ]
