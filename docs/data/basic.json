@@ -1,0 +1,46 @@
+[
+  {
+    "id": "user-ip-op",
+    "name": "User Input / Output",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=EAR7De6Goz4&t=250s"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/c/c-basic-input-output"
+    },
+    "reference": {
+      "label": "GfG",
+      "url": "https://www.geeksforgeeks.org/cpp/basic-input-output-c"
+    },
+    "practice": {
+      "label": "GfG",
+      "url": "https://www.geeksforgeeks.org/problems/c-input-output2432/1"
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "data-types",
+    "name": "Data Types",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=EAR7De6Goz4&t=755s"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/data-types"
+    },
+    "reference": {
+      "label": "GfG",
+      "url": "https://www.geeksforgeeks.org/dsa/data-types-in-programming/"
+    },
+    "practice": {
+      "label": "GfG",
+      "url": "https://www.geeksforgeeks.org/problems/data-types-java/1"
+    },
+    "difficulty": "Easy",
+    "status": false
+  }
+]

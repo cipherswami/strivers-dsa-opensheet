@@ -1,0 +1,47 @@
+/* ---------- Index heading ---------- */
+
+.section > h2 {
+  width: 80%;
+  margin: 0 auto 16px auto; /* align with table */
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+/* Progress next to title */
+.section > h2 .progress {
+  font-size: 1.5rem; /* was too small */
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* ---------- Topics table ---------- */
+
+.topics-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.topics-table th,
+.topics-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.topics-table th {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Column alignment */
+.topics-table th:first-child,
+.topics-table td:first-child {
+  text-align: left;
+}
+
+.topics-table th.count,
+.topics-table td.count {
+  text-align: center;
+  width: 140px;
+}
