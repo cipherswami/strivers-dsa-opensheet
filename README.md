@@ -14,7 +14,7 @@ Special thanks to Striver for creating an incredible resource for the programmin
 
 <div align="center">
   
-*"You don't need a perfect background to build a great future. You just need direction, discipline, and the courage to start."*
+_"You don't need a perfect background to build a great future. You just need direction, discipline, and the courage to start."_  
 **- Striver**
 
 </div>
