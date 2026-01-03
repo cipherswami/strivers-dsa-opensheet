@@ -1,0 +1,662 @@
+[
+  {
+    "id": "implement-stack-using-arrays",
+    "name": "Implement Stack using Arrays",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-stack-using-array/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-queue-using-arrays",
+    "name": "Implement Queue using Arrays",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-queue-using-array/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-stack-using-queue",
+    "name": "Implement Stack using Queue",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-stack-using-single-queue/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/implement-stack-using-queues/"
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-queue-using-stack",
+    "name": "Implement Queue using Stack",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-queue-using-stack/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/implement-queue-using-stacks/"
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-stack-using-linkedlist",
+    "name": "Implement stack using Linkedlist",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-stack-using-linked-list/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-queue-using-linkedlist",
+    "name": "Implement queue using Linkedlist",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-queue-using-linked-list/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "check-for-balanced-paranthesis",
+    "name": "Check for balanced paranthesis",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/xwjS0iZhw4I?si=UoyKpFn4Q3nf5h2R"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/check-for-balanced-parentheses/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/valid-parentheses/"
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "implement-min-stack",
+    "name": "Implement Min Stack",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/NdDIaH91P0g?si=4_Jbsq5trFvfSdUY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-min-stack-o2n-and-on-space-complexity/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/min-stack/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "infix-to-postfix-conversion-using-stack",
+    "name": "Infix to Postfix Conversion using Stack",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/infix-to-postfix/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "prefix-to-infix-conversion",
+    "name": "Prefix to Infix Conversion",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/prefix-to-infix-conversion"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "prefix-to-postfix-conversion",
+    "name": "Prefix to Postfix Conversion",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/prefix-to-postfix-conversion"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "postfix-to-prefix-conversion",
+    "name": "Postfix to Prefix Conversion",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/postfix-to-prefix-conversion"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "postfix-to-infix",
+    "name": "Postfix to Infix",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/postfix-to-infix"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "convert-infix-to-prefix-notation",
+    "name": "Convert Infix To Prefix Notation",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/infix-to-prefix/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "next-greater-element",
+    "name": "Next Greater Element",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/e7XQLtOQM3I?si=QdcHpTtx6gAHsext"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/next-greater-element-using-stack/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/next-greater-element-i/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "next-greater-element-2",
+    "name": "Next Greater Element 2",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/7PrncD7v9YQ?si=UkBc7eVy9HGlBpeW"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/next-greater-element-2"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/next-greater-element-ii/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "next-smaller-element",
+    "name": "Next Smaller Element",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/next-smaller-element"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "number-of-nges-to-the-right",
+    "name": "Number of NGEs to the right",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/number-of-nges-to-the-right"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "trapping-rainwater",
+    "name": "Trapping Rainwater",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/trapping-rainwater/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "sum-of-subarray-minimum",
+    "name": "Sum of subarray minimum",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/v0e8p9JCgRc?si=XAU7ekECgS5nboRw"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/sum-of-subarray-minimums"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "asteroid-collision",
+    "name": "Asteroid Collision",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/_eYGqw_VDR4?si=YyxibcHq800RqgIQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/asteroid-collision"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/asteroid-collision/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "sum-of-subarray-ranges",
+    "name": "Sum of subarray ranges",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/gIrMptNPf5M?si=Q_GHuBvzZVs27X_U"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/sum-of-subarray-ranges"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "remove-k-digits",
+    "name": "Remove k Digits",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/jmbuRzYPGrg?si=WN387gwQ7aXWkUao"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/remove-k-digits"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/remove-k-digits/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "largest-rectangle-in-a-histogram",
+    "name": "Largest rectangle in a histogram",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/Bzat9vgD0fs?si=DiBlLejXcr6EJoyB"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/area-of-largest-rectangle-in-histogram/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "maximal-rectangles",
+    "name": "Maximal Rectangles",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/ttVu6G7Ayik?si=RhyeKepNwjRUYp7A"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/maximal-rectangles"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/maximal-rectangle/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "sliding-window-maximum",
+    "name": "Sliding Window maximum",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/NwBvene4Imo?si=eU1PY-bcQfk5wdog"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/sliding-window-maximum/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "stock-span-problem",
+    "name": "Stock span problem",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/eay-zoSRkVc?si=deNNe5i38BOAntha"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/stock-span-problem"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/online-stock-span/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "the-celebrity-problem",
+    "name": "The Celebrity Problem",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/cEadsbTeze4?si=olXYfOs7l-SEn2zl"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/celebrity-problem"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "lru-cache-important",
+    "name": "LRU cache (IMPORTANT)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/z9bJUPxzFOw?si=IUo_d35rXBD0CBAF"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/implement-lru-cache/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/lru-cache/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "lfu-cache",
+    "name": "LFU cache",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/lfu-cache"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/lfu-cache/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  }
+]

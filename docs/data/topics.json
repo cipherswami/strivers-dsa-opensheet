@@ -1,5 +1,68 @@
 [
-  { "id": "basic", "name": "Basic" },
-  { "id": "sorting", "name": "Sorting" },
-  { "id": "arrays", "name": "Arrays" }
+  { "id": "basic", "name": "Learn the basics" },
+  { "id": "sorting", "name": "Learn Important Sorting Techniques" },
+  {
+    "id": "arrays",
+    "name": "Solve Problems on Arrays [Easy -> Medium -> Hard]"
+  },
+  {
+    "id": "binary-search",
+    "name": "Binary Search [1D, 2D Arrays, Search Space]"
+  },
+  {
+    "id": "strings-basic",
+    "name": "Strings [Basic and Medium]"
+  },
+  {
+    "id": "linked-list",
+    "name": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]"
+  },
+  {
+    "id": "recursion",
+    "name": "Recursion [PatternWise]"
+  },
+  {
+    "id": "bit-manipulation",
+    "name": "Bit Manipulation [Concepts & Problems]"
+  },
+  {
+    "id": "stack-queues",
+    "name": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
+  },
+  {
+    "id": "sliding-pointers",
+    "name": "Sliding Window & Two Pointer Combined Problems"
+  },
+  {
+    "id": "heaps",
+    "name": "Heaps [Learning, Medium, Hard Problems]"
+  },
+  {
+    "id": "greedy",
+    "name": "Greedy Algorithms [Easy, Medium/Hard]"
+  },
+  {
+    "id": "binary-tree",
+    "name": "Binary Trees [Traversals, Medium and Hard Problems]"
+  },
+  {
+    "id": "bst",
+    "name": "Binary Search Trees [Concept and Problems]"
+  },
+  {
+    "id": "graphs",
+    "name": "Graphs [Concepts & Problems]"
+  },
+  {
+    "id": "dp",
+    "name": "Dynamic Programming [Patterns and Problems]"
+  },
+  {
+    "id": "tries",
+    "name": "Tries"
+  },
+  {
+    "id": "strings-hard",
+    "name": "Strings"
+  }
 ]
