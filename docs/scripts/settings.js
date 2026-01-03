@@ -1,9 +1,13 @@
-import { auth } from "./firebase.js";
+import { auth, db } from "./firebase.js";
 import {
   onAuthStateChanged,
   updateProfile,
   deleteUser,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import {
+  doc,
+  deleteDoc,
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { showToast } from "./main.js";
 
 const email = document.getElementById("email");
@@ -44,19 +48,24 @@ saveName.onclick = async () => {
   }
 };
 
-/* ---------- Delete account ---------- */
+/* ---------- Delete account + data ---------- */
 deleteAccountBtn.onclick = async () => {
   if (!currentUser) return;
 
   const ok = confirm(
-    "This will permanently delete your account.\nThis cannot be undone."
+    "This will permanently delete your account AND all your data.\nThis cannot be undone."
   );
 
   if (!ok) return;
 
   try {
+    // 1️⃣ delete Firestore user data FIRST
+    await deleteDoc(doc(db, "users", currentUser.uid));
+
+    // 2️⃣ delete auth account
     await deleteUser(currentUser);
-    showToast("Account deleted", "success");
+
+    showToast("Account and data deleted", "success");
 
     setTimeout(() => {
       window.location.href = "index.html";
