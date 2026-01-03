@@ -156,3 +156,25 @@ a:hover {
 .hidden {
   display: none;
 }
+
+/* ---------- Mobile layout fix ---------- */
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 20px;
+  }
+
+  #authArea {
+    position: static; /* prevent overlap */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+
+  #userName {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
