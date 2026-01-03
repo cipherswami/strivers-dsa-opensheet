@@ -1,0 +1,376 @@
+[
+  {
+    "id": "introduction-to-priority-queues-using-binary-heaps",
+    "name": "Introduction to Priority Queues using Binary Heaps",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/introduction-to-priority-queues-using-binary-heaps"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "min-heap-and-max-heap-implementation",
+    "name": "Min Heap and Max Heap Implementation",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": ""
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "check-if-an-array-represents-a-min-heap-or-not",
+    "name": "Check if an array represents a min-heap or not",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/check-if-an-array-represents-a-min-heap"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "convert-min-heap-to-max-heap",
+    "name": "Convert min Heap to max Heap",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": ""
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "kth-largest-element-in-an-array-use-priority-queue",
+    "name": "Kth largest element in an array [use priority queue]",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-an-array/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "kth-smallest-element-in-an-array-use-priority-queue",
+    "name": "Kth smallest element in an array [use priority queue]",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-an-array/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "sort-k-sorted-array",
+    "name": "Sort K sorted array",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/sort-k-sorted-array"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "merge-m-sorted-lists",
+    "name": "Merge M sorted Lists",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/merge-m-sorted-lists"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "replace-each-array-element-by-its-corresponding-rank",
+    "name": "Replace each array element by its corresponding rank",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/replace-elements-by-its-rank-in-the-array/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "task-scheduler",
+    "name": "Task Scheduler",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/task-scheduler"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/task-scheduler/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "hands-of-straights",
+    "name": "Hands of Straights",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/hands-of-straights"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/hand-of-straights/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "design-twitter",
+    "name": "Design twitter",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/design-twitter"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/design-twitter/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "connect-n-ropes-with-minimal-cost",
+    "name": "Connect `n` ropes with minimal cost",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-cost-to-connect-sticks"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "kth-largest-element-in-a-stream-of-running-integers",
+    "name": "Kth largest element in a stream of running integers",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/kth-largest-element-in-a-stream-of-running-integers"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/#:~:text=Implement%20KthLargest%20class%3A,largest%20element%20in%20the%20stream."
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "maximum-sum-combination",
+    "name": "Maximum Sum Combination",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/maximum-sum-combination"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "find-median-from-data-stream",
+    "name": "Find Median from Data Stream",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/find-median-from-data-stream"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/find-median-from-data-stream/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "k-most-frequent-elements",
+    "name": "K most frequent elements",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": ""
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/top-k-frequent-elements"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  }
+]

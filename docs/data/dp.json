@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "dynamic-programming-introduction",
+    "name": "Dynamic Programming Introduction",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tyB0ztf0DNY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-introduction/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "climbing-stars",
+    "name": "Climbing Stars",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/mLfjzJsN8us"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-climbing-stairs/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "frog-jumpdp-3",
+    "name": "Frog Jump(DP-3)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=EgG3jsGoPvQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-frog-jump-dp-3/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "frog-jump-with-k-distancesdp-4",
+    "name": "Frog Jump with k distances(DP-4)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=Kmh3rhyEtB8"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-frog-jump-with-k-distances-dp-4/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "maximum-sum-of-non-adjacent-elements-dp-5",
+    "name": "Maximum sum of non-adjacent elements (DP 5)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=GrMBfJNk_NY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/maximum-sum-of-non-adjacent-elements-dp-5/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/house-robber/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "house-robber-dp-6",
+    "name": "House Robber (DP 6)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=3WaxQMELSkw"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-house-robber-dp-6/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/house-robber-ii/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "ninjas-training-dp-7",
+    "name": "Ninja's Training (DP 7)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=AE39gJYuRog"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/dynamic-programming-ninjas-training-dp-7/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "grid-unique-paths-dp-on-grids-dp8",
+    "name": "Grid Unique Paths : DP on Grids (DP8)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=sdE0A2Oxofw"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/grid-unique-paths-dp-on-grids-dp8/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/unique-paths/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "grid-unique-paths-2-dp-9",
+    "name": "Grid Unique Paths 2 (DP 9)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=TmhpgXScLyY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/grid-unique-paths-2-dp-9/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/unique-paths-ii/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "minimum-path-sum-in-grid-dp-10",
+    "name": "Minimum path sum in Grid (DP 10)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=_rgTlyky1uQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-path-sum-in-a-grid-dp-10"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/minimum-path-sum/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "minimum-path-sum-in-triangular-grid-dp-11",
+    "name": "Minimum path sum in Triangular Grid (DP 11)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=SrP-PiLSYC0"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-path-sum-in-triangular-grid-dp-11/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/triangle/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "minimummaximum-falling-path-sum-dp-12",
+    "name": "Minimum/Maximum Falling Path Sum (DP-12)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=N_aJ5qQbYA0"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-maximum-falling-path-sum-dp-12/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/minimum-falling-path-sum/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "3-d-dp-ninja-and-his-friends-dp-13",
+    "name": "3-d DP : Ninja and his friends (DP-13)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=QGfn7JeXK54"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/3-d-dp-ninja-and-his-friends-dp-13/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "subset-sum-equal-to-target-dp-14",
+    "name": "Subset sum equal to target (DP- 14)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=fWX9xDmIzRI"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/subset-sum-equal-to-target-dp-14/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "partition-equal-subset-sum-dp-15",
+    "name": "Partition Equal Subset Sum (DP- 15)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=7win3dcgo3k"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/partition-equal-subset-sum-dp-15/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "partition-set-into-2-subsets-with-min-absolute-sum-diff-dp-16",
+    "name": "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=GS_OqZb2CWc"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/partition-set-into-2-subsets-with-min-absolute-sum-diff-dp-16/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "count-subsets-with-sum-k-dp-17",
+    "name": "Count Subsets with Sum K (DP - 17)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=ZHyb-A2Mte4"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/count-subsets-with-sum-k-dp-17/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "count-partitions-with-given-difference-dp-18",
+    "name": "Count Partitions with Given Difference (DP - 18)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=zoilQD1kYSg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/count-partitions-with-given-difference-dp-18/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "assign-cookies",
+    "name": "Assign Cookies",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/DIX2p7vb9co?si=6G7JzMZ2TSP_LWSG"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/assign-cookies"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/assign-cookies/"
+    },
+    "difficulty": "Easy",
+    "status": false
+  },
+  {
+    "id": "minimum-coins-dp-20",
+    "name": "Minimum Coins (DP - 20)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=myPeWb3Y68A"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-coins-dp-20/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/coin-change/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "target-sum-dp-21",
+    "name": "Target Sum (DP - 21)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=b3GD8263-PQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/target-sum-dp-21/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/target-sum/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "coin-change-2-dp-22",
+    "name": "Coin Change 2 (DP - 22)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=HgyouUi11zk"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/coin-change-2-dp-22/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/coin-change-2/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "unbounded-knapsack-dp-23",
+    "name": "Unbounded Knapsack (DP - 23)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/OgvOZ6OrJoY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/unbounded-knapsack-dp-23/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "rod-cutting-problem-or-dp-24",
+    "name": "Rod Cutting Problem | (DP - 24)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/mO8XpGoJwuo"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/rod-cutting-problem-dp-24/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "longest-common-subsequence-or-dp-25",
+    "name": "Longest Common Subsequence | (DP - 25)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/NPZn9jBrX8U"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-common-subsequence-dp-25/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "print-longest-common-subsequence-or-dp-26",
+    "name": "Print Longest Common Subsequence | (DP - 26)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/-zI4mrF2Pb4"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/print-longest-common-subsequence-dp-26/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "longest-common-substring-or-dp-27",
+    "name": "Longest Common Substring | (DP - 27)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/_wP9mWNPL5w"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-common-substring-dp-27/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "longest-palindromic-subsequence-or-dp-28",
+    "name": "Longest Palindromic Subsequence | (DP-28)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/6i_T5kkfv4A"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-palindromic-subsequence-dp-28/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "minimum-insertions-to-make-string-palindrome-or-dp-29",
+    "name": "Minimum insertions to make string palindrome | DP-29",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=xPBLEj41rFU"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-insertions-to-make-string-palindrome-dp-29/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "minimum-insertionsdeletions-to-convert-string-or-dp-30",
+    "name": "Minimum Insertions/Deletions to Convert String | (DP- 30)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://www.youtube.com/watch?v=yMnH0jrir0Q"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-insertions-deletions-to-convert-string-dp-30/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "shortest-common-supersequence-or-dp-31",
+    "name": "Shortest Common Supersequence | (DP - 31)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/xElxAuBcvsU"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/shortest-common-supersequence-dp-31/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/shortest-common-supersequence/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "distinct-subsequencesor-dp-32",
+    "name": "Distinct Subsequences| (DP-32)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/nVG7eTiD2bY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/distinct-subsequences-dp-32/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/distinct-subsequences/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "edit-distance-or-dp-33",
+    "name": "Edit Distance | (DP-33)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/fJaKO8FbDdo"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/edit-distance-dp-33/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/edit-distance/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "wildcard-matching-or-dp-34",
+    "name": "Wildcard Matching | (DP-34)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/ZmlQ3vgAOMo"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/wildcard-matching-dp-34/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/wildcard-matching/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock-ordp-35",
+    "name": "Best Time to Buy and Sell Stock |(DP-35)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/excAOvwF_Wk"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/stock-buy-and-sell-dp-35/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "buy-and-sell-stock-iiordp-36",
+    "name": "Buy and Sell Stock - II|(DP-36)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/nGJmxkUJQGs"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/buy-and-sell-stock-ii-dp-36/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "buy-and-sell-stocks-iiiordp-37",
+    "name": "Buy and Sell Stocks III|(DP-37)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/-uQGzhYj8BQ"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/buy-and-sell-stock-iii-dp-37/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "buy-and-stock-sell-iv-ordp-38",
+    "name": "Buy and Stock Sell IV |(DP-38)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/IV1dHbk5CDc"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/buy-and-sell-stock-iv-dp-38/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "buy-and-sell-stocks-with-cooldownordp-39",
+    "name": "Buy and Sell Stocks With Cooldown|(DP-39)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/IGIe46xw3YY"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/buy-and-sell-stocks-with-cooldown-dp-39/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "buy-and-sell-stocks-with-transaction-feeordp-40",
+    "name": "Buy and Sell Stocks With Transaction Fee|(DP-40)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/k4eK-vEmnKg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/buy-and-sell-stocks-with-transaction-fees-dp-40/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "longest-increasing-subsequence-ordp-41",
+    "name": "Longest Increasing Subsequence |(DP-41)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/ekcwMsSIzVc"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-increasing-subsequence-dp-41/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "printing-longest-increasing-subsequenceordp-42",
+    "name": "Printing Longest Increasing Subsequence|(DP-42)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/IFfYfonAFGc"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/printing-longest-increasing-subsequence-dp-42/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "longest-increasing-subsequence-ordp-43",
+    "name": "Longest Increasing Subsequence |(DP-43)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/on2hvxBXJH4"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-increasing-subsequence-binary-search-dp-43/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "largest-divisible-subsetordp-44",
+    "name": "Largest Divisible Subset|(DP-44)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/gDuZwBW9VvM"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-divisible-subset-dp-44/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/largest-divisible-subset/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "longest-string-chainordp-45",
+    "name": "Longest String Chain|(DP-45)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/YY8iBaYcc4g"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-string-chain-dp-45/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-string-chain/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "longest-bitonic-subsequence-ordp-46",
+    "name": "Longest Bitonic Subsequence |(DP-46)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/y4vN0WNdrlg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/longest-bitonic-subsequence-dp-46/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "number-of-longest-increasing-subsequencesordp-47",
+    "name": "Number of Longest Increasing Subsequences|(DP-47)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/cKVl1TFdNXg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/number-of-longest-increasing-subsequences-dp-47/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/"
+    },
+    "difficulty": "Medium",
+    "status": false
+  },
+  {
+    "id": "matrix-chain-multiplicationordp-48",
+    "name": "Matrix Chain Multiplication|(DP-48)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/vRVfmbCFW7Y"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/dynamic-programming/matrix-chain-multiplication-dp-48/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "matrix-chain-multiplication-or-bottom-upordp-49",
+    "name": "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/pDCXsbAw5Cg"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/matrix-chain-multiplication-tabulation-method-dp-49/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "",
+      "url": ""
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "minimum-cost-to-cut-the-stickordp-50",
+    "name": "Minimum Cost to Cut the Stick|(DP-50)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/xwomavsC86c"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/minimum-cost-to-cut-the-stick-dp-50/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "burst-balloonsordp-51",
+    "name": "Burst Balloons|(DP-51)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/Yz4LlDSlkns"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/burst-balloons-partition-dp-dp-51/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/burst-balloons/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "evaluate-boolean-expression-to-trueordp-52",
+    "name": "Evaluate Boolean Expression to True|(DP-52)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/MM7fXopgyjw"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/evaluate-boolean-expression-to-true-partition-dp-dp-52/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/parsing-a-boolean-expression/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "palindrome-partitioning-iiordp-53",
+    "name": "Palindrome Partitioning - II|(DP-53)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/_H8V5hJUGd0"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/palindrome-partitioning-ii-front-partition-dp-53/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/palindrome-partitioning-ii/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "partition-array-for-maximum-sumordp-54",
+    "name": "Partition Array for Maximum Sum|(DP-54)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/PhWWJmaKfMc"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/partition-array-for-maximum-sum-front-partition-dp-54/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/partition-array-for-maximum-sum/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "maximum-rectangle-area-with-all-1sordp-55",
+    "name": "Maximum Rectangle Area with all 1's|(DP-55)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/tOylVCugy9k"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/maximum-rectangle-area-with-all-1s-dp-on-rectangles-dp-55/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/maximal-rectangle/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  },
+  {
+    "id": "count-square-submatrices-with-all-onesordp-56",
+    "name": "Count Square Submatrices with All Ones|(DP-56)",
+    "video": {
+      "label": "YouTube (Striver)",
+      "url": "https://youtu.be/auS1fynpnjo"
+    },
+    "resource": {
+      "label": "TakeUForward",
+      "url": "https://takeuforward.org/data-structure/count-square-submatrices-with-all-1s-dp-on-rectangles-dp-56/"
+    },
+    "reference": {
+      "label": "",
+      "url": ""
+    },
+    "practice": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/"
+    },
+    "difficulty": "Hard",
+    "status": false
+  }
+]
