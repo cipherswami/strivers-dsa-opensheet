@@ -32,7 +32,6 @@ saveName.onclick = async () => {
     await updateProfile(currentUser, {
       displayName: displayName.value.trim(),
     });
-    alert("Name updated");
   } catch (e) {
     alert(e.message);
   }
@@ -50,7 +49,6 @@ deleteAccountBtn.onclick = async () => {
 
   try {
     await deleteUser(currentUser);
-    alert("Account deleted");
     window.location.href = "index.html";
   } catch (e) {
     alert(e.message);
