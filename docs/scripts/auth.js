@@ -12,6 +12,7 @@ import {
 import {
   doc,
   getDoc,
+  setDoc,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const loginBtn = document.getElementById("loginBtn");
@@ -54,16 +55,44 @@ settingsBtn.onclick = () => {
   window.location.href = "settings.html";
 };
 
-/* ---- Sync helper ---- */
-async function syncFromCloud(user) {
+/* ---------- Helpers ---------- */
+
+/**
+ * Read all local progress from localStorage.
+ * Progress keys are in the form: topicId:problemId
+ */
+function getLocalProgress() {
+  const progress = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.includes(":")) {
+      progress[key] = localStorage.getItem(key) === "true";
+    }
+  }
+  return progress;
+}
+
+/**
+ * Merge local + cloud progress and sync both ways.
+ * This runs ONCE after login.
+ */
+async function syncAndMerge(user) {
   const ref = doc(db, "users", user.uid);
+
+  const local = getLocalProgress();
+
   const snap = await getDoc(ref);
+  const remote = snap.exists() ? snap.data().progress || {} : {};
 
-  if (!snap.exists()) return;
+  // Merge (union). Remote does NOT delete local.
+  const merged = { ...local, ...remote };
 
-  const data = snap.data().progress || {};
-  for (const key in data) {
-    localStorage.setItem(key, data[key] ? "true" : "false");
+  // Push merged result to cloud
+  await setDoc(ref, { progress: merged }, { merge: true });
+
+  // Write merged result back to localStorage
+  for (const key in merged) {
+    localStorage.setItem(key, merged[key] ? "true" : "false");
   }
 }
 
@@ -76,14 +105,14 @@ onAuthStateChanged(auth, async (user) => {
     userName.textContent = user.displayName || "User";
     userPic.src = user.photoURL || "";
 
-    // 🔒 reload guard
+    // Reload guard
     const alreadySynced = sessionStorage.getItem("synced-after-login");
 
     if (!alreadySynced) {
       try {
-        await syncFromCloud(user);
+        await syncAndMerge(user);
         sessionStorage.setItem("synced-after-login", "true");
-        window.location.reload();
+        window.location.reload(); // one-time refresh
       } catch (err) {
         console.error("Firestore sync failed", err);
       }
