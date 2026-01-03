@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Strivers OpenSheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/setting.css" />
+  </head>
+
+  <body>
+    <a href="index.html" class="back">← Back</a>
+
+    <section class="section">
+      <h1>Account Settings</h1>
+
+      <p class="context">Signed in as <span id="email"></span></p>
+
+      <h2>Display Name</h2>
+      <input id="displayName" />
+      <button id="saveName">Save</button>
+
+      <h2 style="color: var(--hard)">Danger Zone</h2>
+      <button
+        id="deleteAccount"
+        style="border-color: var(--hard); color: var(--hard)"
+      >
+        Delete Account
+      </button>
+    </section>
+
+    <script type="module" src="scripts/settings.js"></script>
+  </body>
+</html>

@@ -1,54 +1,63 @@
-// scripts/topic.js
+/**
+ * File         : docs/scripts/topic.js
+ * Description  : Logic for topic page.
+ */
+
+import {
+  doc,
+  setDoc,
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { auth, db } from "./firebase.js";
+import { fetchJSON, progressKey, isCompleted } from "./main.js";
+
+/* ---------- Sync helper ---------- */
+
+async function saveProgress(key, value) {
+  // local cache (always)
+  localStorage.setItem(key, value ? "true" : "false");
+
+  // cloud sync (only if logged in)
+  const user = auth.currentUser;
+  if (!user) return;
+
+  const ref = doc(db, "users", user.uid);
+  await setDoc(
+    ref,
+    {
+      progress: {
+        [key]: value,
+      },
+    },
+    { merge: true }
+  );
+}
+
+/* ---------- Params ---------- */
 
 const params = new URLSearchParams(window.location.search);
 const topicId = params.get("topic");
 
 if (!topicId) {
-  document.getElementById("topic-title").innerText = "Invalid topic";
-  document.title = "Strivers OpenSheet";
   throw new Error("No topic specified");
 }
-
-let topicTitle = topicId;
 
 /* ---------- Helpers ---------- */
 
 function renderLink(obj) {
   if (!obj || !obj.url) return "-";
-  return `<a href="${obj.url}" target="_blank">${obj.label}</a>`;
+  return `<a href="${obj.url}" target="_blank" rel="noopener">Open</a>`;
 }
-
-function updateHeading(done, total) {
-  const h1 = document.getElementById("topic-title");
-  h1.innerHTML = `
-    ${topicTitle}
-    <span class="progress">(${done} / ${total})</span>
-  `;
-  document.title = `Strivers OpenSheet | ${topicTitle}`;
-}
-
-/* ---------- Load topic name ---------- */
-
-fetchJSON("data/topics.json")
-  .then((topics) => {
-    const topic = topics.find((t) => t.id === topicId);
-    topicTitle = topic ? topic.name : topicId;
-  })
-  .catch(console.error);
 
 /* ---------- Load problems ---------- */
 
 fetchJSON(`data/${topicId}.json`)
   .then((problems) => {
     const tbody = document.getElementById("topic-table-body");
-
-    const total = problems.length;
-    let done = 0;
+    if (!tbody) return;
 
     problems.forEach((p) => {
       const key = progressKey(topicId, p.id);
       const checked = isCompleted(topicId, p.id);
-      if (checked) done++;
 
       const tr = document.createElement("tr");
       tr.innerHTML = `
@@ -68,15 +77,15 @@ fetchJSON(`data/${topicId}.json`)
       `;
 
       const checkbox = tr.querySelector("input");
-      checkbox.addEventListener("change", (e) => {
-        localStorage.setItem(key, e.target.checked);
-        done += e.target.checked ? 1 : -1;
-        updateHeading(done, total);
+      checkbox.addEventListener("change", async (e) => {
+        try {
+          await saveProgress(key, e.target.checked);
+        } catch (err) {
+          console.error("Failed to sync progress", err);
+        }
       });
 
       tbody.appendChild(tr);
     });
-
-    updateHeading(done, total);
   })
   .catch((err) => console.error("Failed to load topic data", err));
