@@ -1,38 +1,31 @@
-// scripts/index.js
+/**
+ * File         : docs/scripts/index.js
+ * Description  : JS file for index.js
+ */
+
+import { fetchJSON, isCompleted, progressKey } from "./main.js";
 
 (async function () {
   const tableBody = document.querySelector(".topics-table tbody");
   const progressEl = document.getElementById("overall-progress");
-
   if (!tableBody || !progressEl) return;
 
-  let topics;
-  try {
-    topics = await fetchJSON("data/topics.json");
-  } catch (err) {
-    console.error(err);
-    return;
-  }
+  const topics = await fetchJSON("data/topics.json");
 
   let globalDone = 0;
   let globalTotal = 0;
 
   for (const topic of topics) {
     let problems = [];
-
     try {
       problems = await fetchJSON(`data/${topic.id}.json`);
-    } catch {
-      problems = [];
-    }
+    } catch {}
 
     const total = problems.length;
     let done = 0;
 
     for (const p of problems) {
-      if (isCompleted(topic.id, p.id)) {
-        done++;
-      }
+      if (isCompleted(topic.id, p.id)) done++;
     }
 
     globalDone += done;
@@ -45,9 +38,7 @@
           ${topic.name}
         </a>
       </td>
-      <td class="count">
-        ${done} / ${total}
-      </td>
+      <td class="count">${done} / ${total}</td>
     `;
 
     tableBody.appendChild(tr);

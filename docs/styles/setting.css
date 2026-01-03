@@ -1,0 +1,48 @@
+/* ---- Form elements (Settings page) ---- */
+
+input {
+  width: 100%;
+  max-width: 360px;
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 6px 0 14px 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ---- Buttons ---- */
+
+button {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+/* ---- Section spacing ---- */
+
+.section h2 {
+  margin-top: 32px;
+}
+
+/* ---- Danger zone ---- */
+
+#deleteAccount {
+  margin-top: 12px;
+}
+
+#deleteAccount:hover {
+  background: rgba(239, 68, 68, 0.08);
+}
