@@ -14,6 +14,7 @@ import {
   getDoc,
   setDoc,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { showToast } from "./main.js";
 
 const loginBtn = document.getElementById("loginBtn");
 const userMenu = document.getElementById("userMenu");
@@ -24,17 +25,17 @@ const settingsBtn = document.getElementById("settingsBtn");
 const userName = document.getElementById("userName");
 const userPic = document.getElementById("userPic");
 
-/* ---- Login (popup) ---- */
+/* ---------- Login ---------- */
 loginBtn.onclick = async () => {
   try {
     await signInWithPopup(auth, provider);
   } catch (e) {
     console.error(e);
-    alert(e.message);
+    showToast(e.message || "Login failed", "error");
   }
 };
 
-/* ---- Dropdown ---- */
+/* ---------- Dropdown ---------- */
 userBtn.onclick = () => {
   dropdown.classList.toggle("hidden");
 };
@@ -45,22 +46,23 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* ---- Logout ---- */
+/* ---------- Logout ---------- */
 logoutBtn.onclick = async () => {
-  await signOut(auth);
+  try {
+    await signOut(auth);
+    showToast("Logged out", "info");
+  } catch (e) {
+    showToast("Logout failed", "error");
+  }
 };
 
-/* ---- Settings ---- */
+/* ---------- Settings ---------- */
 settingsBtn.onclick = () => {
   window.location.href = "settings.html";
 };
 
 /* ---------- Helpers ---------- */
 
-/**
- * Read all local progress from localStorage.
- * Progress keys are in the form: topicId:problemId
- */
 function getLocalProgress() {
   const progress = {};
   for (let i = 0; i < localStorage.length; i++) {
@@ -72,31 +74,24 @@ function getLocalProgress() {
   return progress;
 }
 
-/**
- * Merge local + cloud progress and sync both ways.
- * This runs ONCE after login.
- */
 async function syncAndMerge(user) {
   const ref = doc(db, "users", user.uid);
 
   const local = getLocalProgress();
-
   const snap = await getDoc(ref);
   const remote = snap.exists() ? snap.data().progress || {} : {};
 
-  // Merge (union). Remote does NOT delete local.
   const merged = { ...local, ...remote };
 
-  // Push merged result to cloud
   await setDoc(ref, { progress: merged }, { merge: true });
 
-  // Write merged result back to localStorage
   for (const key in merged) {
     localStorage.setItem(key, merged[key] ? "true" : "false");
   }
 }
 
-/* ---- Auth state (SINGLE source of truth) ---- */
+/* ---------- Auth state (single listener) ---------- */
+
 onAuthStateChanged(auth, async (user) => {
   if (user) {
     // UI
@@ -105,16 +100,17 @@ onAuthStateChanged(auth, async (user) => {
     userName.textContent = user.displayName || "User";
     userPic.src = user.photoURL || "";
 
-    // Reload guard
-    const alreadySynced = sessionStorage.getItem("synced-after-login");
+    // one-time sync per login
+    const synced = sessionStorage.getItem("synced-after-login");
 
-    if (!alreadySynced) {
+    if (!synced) {
       try {
         await syncAndMerge(user);
         sessionStorage.setItem("synced-after-login", "true");
-        window.location.reload(); // one-time refresh
-      } catch (err) {
-        console.error("Firestore sync failed", err);
+        window.location.reload(); // single, intentional reload
+      } catch (e) {
+        console.error(e);
+        showToast("Failed to sync progress", "error");
       }
     }
   } else {
