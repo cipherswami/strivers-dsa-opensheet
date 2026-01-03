@@ -13,10 +13,8 @@ import { fetchJSON, progressKey, isCompleted } from "./main.js";
 /* ---------- Sync helper ---------- */
 
 async function saveProgress(key, value) {
-  // local cache (always)
   localStorage.setItem(key, value ? "true" : "false");
 
-  // cloud sync (only if logged in)
   const user = auth.currentUser;
   if (!user) return;
 
@@ -45,7 +43,9 @@ if (!topicId) {
 
 function renderLink(obj) {
   if (!obj || !obj.url) return "-";
-  return `<a href="${obj.url}" target="_blank" rel="noopener">Open</a>`;
+  return `<a href="${obj.url}" target="_blank" rel="noopener">
+    ${obj.label || "Link"}
+  </a>`;
 }
 
 /* ---------- Load problems ---------- */
