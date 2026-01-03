@@ -56,28 +56,31 @@ h1 .progress {
 
 /* ---------- Column widths (desktop) ---------- */
 
-.topic-table th:nth-child(1) {
-  width: 28%;
-} /* Name */
+.topic-table th:nth-child(1),
+.topic-table td:nth-child(1) {
+  width: 40%;
+}
+
 .topic-table th:nth-child(2),
 .topic-table th:nth-child(3),
 .topic-table th:nth-child(4),
 .topic-table th:nth-child(5) {
-  width: 12%;
+  width: 10%;
 }
+
 .topic-table th:nth-child(6),
 .topic-table th:nth-child(7) {
-  width: 8%;
+  width: 5%;
 }
 
 /* ================================================= */
 /* ================== NAME COLUMN ================== */
 /* ================================================= */
 
-/* Allow problem titles to wrap cleanly */
 .topic-table td:nth-child(1) {
   white-space: normal;
-  word-break: break-word;
+  overflow-wrap: anywhere;
+  word-break: normal;
   line-height: 1.4;
 }
 
@@ -182,6 +185,7 @@ h1 .progress {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
   }
 
   .topic-table thead,
@@ -190,12 +194,19 @@ h1 .progress {
     width: max-content;
   }
 
-  /* Remove forced widths */
-  .topic-table th {
-    width: auto !important;
+  /* FORCE column widths on mobile */
+  .topic-table th:nth-child(1),
+  .topic-table td:nth-child(1) {
+    min-width: 220px;
+    max-width: 260px;
   }
 
-  /* Left-align everything for readability */
+  .topic-table th:nth-child(n + 2),
+  .topic-table td:nth-child(n + 2) {
+    min-width: 90px;
+  }
+
+  /* Left-align for readability */
   .topic-table th,
   .topic-table td {
     text-align: left;
