@@ -178,3 +178,53 @@ a:hover {
     white-space: nowrap;
   }
 }
+
+/* ---------- Toast ---------- */
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.toast {
+  background: #020617;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-success {
+  border-color: var(--easy);
+}
+
+.toast-error {
+  border-color: var(--hard);
+}
+
+.toast-info {
+  border-color: var(--accent);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  #toast-container {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 16px;
+  }
+}
