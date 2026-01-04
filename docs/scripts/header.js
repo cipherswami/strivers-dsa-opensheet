@@ -109,7 +109,7 @@ onAuthStateChanged(auth, async (user) => {
     }
   } else {
     /* ---------- Guest UI ---------- */
-    userName.textContent = "Guest User";
+    userName.textContent = localStorage.getItem("displayName") || "Guest User";
     userPic.src = "assets/guest.png";
     authBtn.textContent = "Login";
   }
