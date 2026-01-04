@@ -1,0 +1,384 @@
+{
+  "title": "Bit Manipulation [Concepts & Problems]",
+  "topic-id": 8,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Introduction to Bit Manipulation [Theory]",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/qQd-ViW7bfk?si=QtdNaRhHmZb08Mr8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/introduction-to-bit-manipulation-theory"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Check if the i-th bit is set or not",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-the-i-th-bit-is-set-or-not"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 3,
+      "name": "Check if a number is odd or not",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-a-number-is-odd-or-not"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 4,
+      "name": "Check if a number is power of 2 or not",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-a-number-is-power-of-2-or-not"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/power-of-two/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Count the number of set bits",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-the-number-of-set-bits"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "Set/Unset the rightmost unset bit",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/set-the-rightmost-bit"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 7,
+      "name": "Swap two numbers",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/swap-two-numbers"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 8,
+      "name": "Divide two integers without using multiplication, division and mod operator",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/pBD4B1tzgVc?si=G9c5pEE-RrzeU6sz"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/divide-two-integers-without-using-multiplication-division-and-mod-operator"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/divide-two-integers/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 9,
+      "name": "Count number of bits to be flipped to convert A to B",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/OOdrmcfZXd8?si=rnkRVz1UiVBKWC69"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-number-of-bits-to-be-flipped-to-convert-a-to-b"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 10,
+      "name": "Find the number that appears odd number of times",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/sFBCAl8yBfE?si=fETk-BA0cvmF02rR"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-number-that-appears-odd-number-of-times"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/single-number/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 11,
+      "name": "Power Set",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/LqKaUv1G3_I?si=UXU_T5OsHiokPRvP"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/bit-manipulation/power-set-bit-manipulation"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/subsets/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 12,
+      "name": "Find xor of numbers from L to R",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/WqGb7159h7Q?si=uGUEbNUUaIN_6Vvr"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-xor-of-numbers-from-l-to-r"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 13,
+      "name": "Find the two numbers appearing odd number of times",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/UA5JnV1J2sI?si=VFBRJyb3boZvx_r1"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-two-numbers-appearing-odd-number-of-times"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 14,
+      "name": "Print Prime Factors of a Number",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/LT7XhVdeRyg?si=6HkjQokJRPTFai21"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-two-numbers-appearing-odd-number-of-times"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 15,
+      "name": "All Divisors of a Number",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Ae_Ag_saG9s?si=QQoDTW5DxyZ3Lfjg"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/all-divisors-of-a-number"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 16,
+      "name": "Sieve of Eratosthenes",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/g5Fuxn_AvSk?si=fv6Q-Po7wrMW0a5n"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/sieve-of-eratosthenes"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/count-primes/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 17,
+      "name": "Find Prime Factorisation of a Number using Sieve",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/glKWkmKFlMw?si=3k5K5oq3FvKVrWLB"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-prime-factorisation-of-a-number-using-sieve"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 18,
+      "name": "Power(n, x)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/hFWckDXE-K8?si=lBoOx3qYcmGo_j5b"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/power-n-x"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/powx-n/"
+      },
+      "difficulty": "Easy"
+    }
+  ]
+}

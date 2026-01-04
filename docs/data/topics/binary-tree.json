@@ -1,0 +1,825 @@
+{
+  "title": "Binary Trees [Traversals, Medium and Hard Problems]",
+  "topic-id": 13,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Introduction to Trees",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/_ANrF3FJm7I"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-tree/introduction-to-trees/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Binary Tree Representation in C++",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ctCpP0RFDFc"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-tree/binary-tree-representation-in-c/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 3,
+      "name": "Binary Tree Representation in Java",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/hyLyW7rP24I"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-tree/binary-tree-representation-in-java/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 4,
+      "name": "Binary Tree Traversals in Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/jmy0LaGET1I"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-tree/binary-tree-traversal-inorder-preorder-postorder/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Preorder Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/RlUu72JrOCQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "Inorder Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Z_NEgBgbRVI"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/inorder-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 7,
+      "name": "Post-order Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/COQOU6klsBg"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 8,
+      "name": "Level order Traversal / Level order traversal in spiral form",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/EoAsWbO7sqg"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/level-order-traversal-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 9,
+      "name": "Iterative Preorder Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Bfqd8BsPVuw"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/iterative-preorder-traversal-of-binary-tree"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 10,
+      "name": "Iterative Inorder Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/lxTGsVXjwvM"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/inorder-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 11,
+      "name": "Post-order Traversal of Binary Tree using 2 stack",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/2YBhNLodD8Q"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/iterative-postorder-traversal-of-binary-tree-using-2-stack"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 12,
+      "name": "Post-order Traversal of Binary Tree using 1 stack",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/NzIGLLwZBS8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 13,
+      "name": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ySp2epYvgTE"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/preorder-inorder-postorder-traversals-in-one-traversal/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 14,
+      "name": "Height of a Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/eD3tmO66aBA"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-depth-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 15,
+      "name": "Check if the Binary tree is height-balanced or not",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Yt50Jfbd8Po"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-the-binary-tree-is-balanced-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/balanced-binary-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 16,
+      "name": "Diameter of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Rezetez59Nk"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/calculate-the-diameter-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 17,
+      "name": "Maximum path sum",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/WszrfSwMz58"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-sum-path-in-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 18,
+      "name": "Check if two trees are identical or not",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/BhuvF_-PWS0"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-two-trees-are-identical/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/same-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 19,
+      "name": "Zig Zag Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/3OXWEdlIGl4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/zig-zag-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 20,
+      "name": "Boundary Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/0ca1nvR0be4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/boundary-traversal-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/boundary-of-binary-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 21,
+      "name": "Vertical Order Traversal of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/q_a6lpbKJdw"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/vertical-order-traversal-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 22,
+      "name": "Top View of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Et9OCDNvJ78"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/top-view-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 23,
+      "name": "Bottom View of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/0FtVY6I4pB8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/bottom-view-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 24,
+      "name": "Right/Left View of Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/KV4mRzTjlAk"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/right-left-view-of-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-right-side-view/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 25,
+      "name": "Symmetric Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nKggiEpBE"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-for-symmetrical-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/symmetric-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 26,
+      "name": "Root to Node Path in Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/fmflMqVOC7k"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/print-root-to-node-path-in-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 27,
+      "name": "LCA in Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/_-QHfMDde90"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/lowest-common-ancestor-for-two-given-nodes/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 28,
+      "name": "Maximum width of a Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ZbybYvcVLks"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-width-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-width-of-binary-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 29,
+      "name": "Check for Children Sum Property",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/fnmisPM6cVo"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-for-children-sum-property-in-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 30,
+      "name": "Print all the Nodes at a distance of K in a Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/i9ORlEy6EsI"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/print-all-the-nodes-at-a-distance-of-k-in-a-binary-tree"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 31,
+      "name": "Minimum time taken to BURN the Binary Tree from a Node",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/2r5wLmQfD6g"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/minimum-time-taken-to-burn-the-binary-tree-from-a-node"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 32,
+      "name": "Count total Nodes in a COMPLETE Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/u-yWemKGWO0"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-tree/count-number-of-nodes-in-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/count-complete-tree-nodes/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 33,
+      "name": "Requirements needed to construct a Unique Binary Tree | Theory",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/9GMECGQgWrQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 34,
+      "name": "Construct Binary Tree from inorder and preorder",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/aZNaLrVebKQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/construct-a-binary-tree-from-inorder-and-preorder-traversal/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 35,
+      "name": "Construct the Binary Tree from Postorder and Inorder Traversal",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/LgLRTaEMRVc"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/construct-binary-tree-from-inorder-and-postorder-traversal/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 36,
+      "name": "Serialize and deserialize Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/-YbXySKJsX8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/serialize-and-deserialize-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 37,
+      "name": "Morris Preorder Traversal of a Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/80Zug6D1_r4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/morris-preorder-traversal-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 38,
+      "name": "Morris Inorder Traversal of a Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/80Zug6D1_r4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/morris-inorder-traversal-of-a-binary-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 39,
+      "name": "Flatten Binary Tree to LinkedList",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/sWf7k1x9XR4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/flatten-binary-tree-to-linked-list/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+      },
+      "difficulty": "Hard"
+    }
+  ]
+}

@@ -1,48 +1,54 @@
 /**
  * File         : docs/scripts/index.js
- * Description  : JS file for index.js
+ * Description  : Runtime generation of index table using cached topic progress
  */
 
-import { fetchJSON, isCompleted, progressKey } from "./main.js";
+import { fetchJSON } from "./main.js";
 
 (async function () {
-  const tableBody = document.querySelector(".topics-table tbody");
-  const progressEl = document.getElementById("overall-progress");
-  if (!tableBody || !progressEl) return;
+  const overallProgress = document.getElementById("overall-progress");
+  const topicsBody = document.getElementById("topics-body");
 
-  const topics = await fetchJSON("data/topics.json");
+  if (!topicsBody || !overallProgress) return;
+
+  let topics;
+  try {
+    topics = await fetchJSON("data/topics.json");
+  } catch (e) {
+    console.error("Failed to load topics.json", e);
+    return;
+  }
 
   let globalDone = 0;
   let globalTotal = 0;
 
   for (const topic of topics) {
-    let problems = [];
-    try {
-      problems = await fetchJSON(`data/${topic.id}.json`);
-    } catch {}
+    const topicId = topic["topic-id"];
+    const file = topic.file;
+    const title = topic.title;
+    const total = topic.total;
 
-    const total = problems.length;
-    let done = 0;
-
-    for (const p of problems) {
-      if (isCompleted(topic.id, p.id)) done++;
-    }
+    const done = Number(localStorage.getItem(`topic-progress:${topicId}`)) || 0;
 
     globalDone += done;
     globalTotal += total;
 
     const tr = document.createElement("tr");
+
     tr.innerHTML = `
       <td>
-        <a href="topic.html?topic=${topic.id}">
-          ${topic.name}
+        <a href="topic.html?topic=${encodeURIComponent(file)}">
+          ${title}
         </a>
       </td>
-      <td class="count">${done} / ${total}</td>
+      <td class="count">
+        <span class="done">${done}</span> /
+        <span class="total">${total}</span>
+      </td>
     `;
 
-    tableBody.appendChild(tr);
+    topicsBody.appendChild(tr);
   }
 
-  progressEl.textContent = `(${globalDone} / ${globalTotal})`;
+  overallProgress.textContent = `(${globalDone} / ${globalTotal})`;
 })();

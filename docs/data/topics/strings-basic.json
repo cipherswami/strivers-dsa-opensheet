@@ -1,0 +1,321 @@
+{
+  "title": "Strings [Basic and Medium]",
+  "topic-id": 5,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Remove outermost Paranthesis",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/remove-outermost-parentheses"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/remove-outermost-parentheses/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Reverse words in a given string / Palindrome Check",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/reverse-words-in-a-string/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/reverse-words-in-a-string/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 3,
+      "name": "Largest odd number in a string",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/largest-odd-number-in-a-string"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/largest-odd-number-in-string/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 4,
+      "name": "Longest Common Prefix",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/longest-common-prefix"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/longest-common-prefix/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Isomorphic String",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/isomorphic-string"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/isomorphic-strings/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "check whether one string is a rotation of another",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-one-string-is-rotation-of-another"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/rotate-string/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 7,
+      "name": "Check if two strings are anagram of each other",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-two-strings-are-anagrams-of-each-other/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/valid-anagram/#:~:text=Given%20two%20strings%20s%20and,the%20original%20letters%20exactly%20once.&text=Constraints%3A,.length%20%3C%3D%205%20*%2010"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 8,
+      "name": "Sort Characters by frequency",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/sort-characters-by-frequency"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/sort-characters-by-frequency/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 9,
+      "name": "Maximum Nesting Depth of Paranthesis",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-nesting-depth-of-parenthesis"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 10,
+      "name": "Roman Number to Integer and vice versa",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/roman-numerals-to-integer"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/roman-to-integer/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 11,
+      "name": "Implement Atoi",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/implement-atoi"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/string-to-integer-atoi/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 12,
+      "name": "Count Number of Substrings",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-number-of-substrings"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 13,
+      "name": "Longest Palindromic Substring[Do it without DP]",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/longest-palindromic-substring"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 14,
+      "name": "Sum of Beauty of all substring",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/sum-of-beauty-of-all-substring"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 15,
+      "name": "Reverse Every Word in A String",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/reverse-every-word-in-a-string"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/reverse-words-in-a-string/"
+      },
+      "difficulty": "Medium"
+    }
+  ]
+}

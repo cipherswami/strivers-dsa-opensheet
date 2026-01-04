@@ -1,0 +1,195 @@
+{
+  "title": "Strings",
+  "topic-id": 18,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Minimum number of bracket reversals needed to make an expression balanced",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 2,
+      "name": "Count and say",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-and-say"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/count-and-say/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 3,
+      "name": "Hashing In Strings | Theory",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/hashing-in-strings"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 4,
+      "name": "Rabin Karp",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/repeated-string-match/discuss/416144/Rabin-Karp-algorithm-C%2B%2B-implementation"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 5,
+      "name": "Z-Function",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/z-function"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/implement-strstr/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 6,
+      "name": "KMP algo / LPS(pi) array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/kmp-algorithm-or-lps-array"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/implement-strstr/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 7,
+      "name": "Shortest Palindrome",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/shortest-palindrome/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 8,
+      "name": "Longest happy prefix",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/longest-happy-prefix"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/longest-happy-prefix/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 9,
+      "name": "Count palindromic subsequence in given string",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-palindromic-subsequence-in-given-string"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    }
+  ]
+}

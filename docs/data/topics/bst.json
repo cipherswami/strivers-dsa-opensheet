@@ -1,0 +1,342 @@
+{
+  "title": "Binary Search Trees [Concept and Problems]",
+  "topic-id": 14,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Introduction to Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/p7-9UvDQZ3w"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-search-tree/introduction-to-binary-search-trees/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Search in a Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/KcNt6v_56cc"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/search-in-a-binary-search-tree-2/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 3,
+      "name": "Find Min/Max in BST",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-minmax-in-a-bst"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 4,
+      "name": "Ceil in a Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/KSsk8AhdOZA"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-search-tree/ceil-in-a-binary-search-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Floor in a Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/xm_W1ub-K-w"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/binary-search-tree/floor-in-a-binary-search-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "Insert a given Node in Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/FiFiNvM29ps"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 7,
+      "name": "Delete a Node in Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/kouxiP_H5WE"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/delete-node-in-a-bst/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 8,
+      "name": "Find K-th smallest/largest element in BST",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/9TJYWh0adfk"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-binary-search-tree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 9,
+      "name": "Check if a tree is a BST or BT",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/f-sj7I5oXEI"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/validate-binary-search-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 10,
+      "name": "LCA in Binary Search Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/cX_kPV_foZc"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 11,
+      "name": "Construct a BST from a preorder traversal",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/UmJT3j26t1I"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 12,
+      "name": "Inorder Successor/Predecessor in BST",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/SXKAD2svfmI"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/inorder-successorpredecessor-in-bst"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/inorder-successor-in-bst/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 13,
+      "name": "Merge 2 BST's",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/D2jMcmxU4bs"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/bst-iterator"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/binary-search-tree-iterator/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 14,
+      "name": "Two Sum In BST | Check if there exists a pair with Sum K",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ssL3sHwPeb4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/two-sum-in-bst-check-if-there-exists-a-pair-with-sum-k"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 15,
+      "name": "Recover BST | Correct BST with two nodes swapped",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ZWGW7FminDM"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/recover-binary-search-tree/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 16,
+      "name": "Largest BST in Binary Tree",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/X0oXMdtUDwo"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    }
+  ]
+}

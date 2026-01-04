@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data -->
     <meta charset="UTF-8" />
-    <title>Strivers OpenSheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Striver's OpenSheet is free DSA practice sheet made with free resources and free practice problems."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0f172a" />
 
-    <link rel="icon" href="favicon.svg" />
+    <!-- Title -->
+    <title>Strivers OpenSheet | Settings</title>
+
+    <!-- Assets -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/favicon.svg" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/setting.css" />
+    <link rel="stylesheet" href="styles/settings.css" />
   </head>
 
   <body>
     <a href="index.html" class="back">← Back</a>
 
-    <section class="section">
+    <div class="settings-block">
       <h1>Account Settings</h1>
+      <p class="context">
+        Signed in as <span id="email">guest@localhost</span>
+      </p>
 
-      <p class="context">Signed in as <span id="email"></span></p>
+      <!-- General Section -->
+      <section class="settings-general-section">
+        <h2>General</h2>
+        <div class="display-box">
+          <!-- Display picture -->
+          <div class="display-pic">
+            <img id="displayPic" src="assets/guest.png" alt="Display picture" />
+          </div>
+          <!-- Display name -->
+          <div class="display-name">
+            <label for="displayName">Display Name</label>
+            <input
+              id="displayName"
+              type="text"
+              placeholder="User Name"
+              value="Guest User"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            />
+            <button id="saveName">Save</button>
+          </div>
+        </div>
+      </section>
 
-      <h2>Display Name</h2>
-      <input id="displayName" />
-      <button id="saveName">Save</button>
+      <!-- Danger SEction -->
+      <section class="settings-danger-section">
+        <h2>Danger Zone</h2>
+        <div class="danger-box">
+          <button id="resetProgress">Delete current progress</button>
+          <button id="deleteAccount">Delete Account</button>
+        </div>
+      </section>
+    </div>
 
-      <h2 style="color: var(--hard)">Danger Zone</h2>
-      <button
-        id="deleteAccount"
-        style="border-color: var(--hard); color: var(--hard)"
-      >
-        Delete Account
-      </button>
-    </section>
-
+    <!-- Scripts -->
     <script type="module" src="scripts/settings.js"></script>
   </body>
 </html>

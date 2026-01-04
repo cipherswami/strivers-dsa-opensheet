@@ -1,77 +1,122 @@
-import { auth, db } from "./firebase.js";
+/**
+ * File         : docs/scripts/settings.js
+ * Description  : Settings page logic (guest + logged-in)
+ */
+
+import { auth } from "./firebase.js";
 import {
   onAuthStateChanged,
   updateProfile,
   deleteUser,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import {
-  doc,
-  deleteDoc,
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { showToast } from "./main.js";
 
-const email = document.getElementById("email");
-const displayName = document.getElementById("displayName");
-const saveName = document.getElementById("saveName");
+/* ---------- DOM ---------- */
+const emailEl = document.getElementById("email");
+const displayPic = document.getElementById("displayPic");
+const displayNameInput = document.getElementById("displayName");
+const saveNameBtn = document.getElementById("saveName");
+const resetProgressBtn = document.getElementById("resetProgress");
 const deleteAccountBtn = document.getElementById("deleteAccount");
 
+/* ---------- State ---------- */
 let currentUser = null;
 
-/* ---------- Auth guard ---------- */
+/* ---------- Auth State ---------- */
 onAuthStateChanged(auth, (user) => {
-  if (!user) {
-    window.location.href = "index.html";
-    return;
+  currentUser = user;
+
+  if (user) {
+    emailEl.textContent = user.email;
+    displayNameInput.value = user.displayName || "Strivers Jr";
+    displayPic.src = user.photoURL || "assets/guest.png";
+    deleteAccountBtn.style.display = "inline-block";
+  } else {
+    displayNameInput.value =
+      localStorage.getItem("displayName") || "Guest User";
+    deleteAccountBtn.style.display = "none";
   }
 
-  currentUser = user;
-  email.textContent = user.email;
-  displayName.value = user.displayName || "";
+  console.log("Auth");
 });
 
-/* ---------- Update display name ---------- */
-saveName.onclick = async () => {
-  if (!currentUser) return;
+/* ---------- Display Name ---------- */
+async function saveDisplayName() {
+  const newName = displayNameInput.value.trim();
 
-  const name = displayName.value.trim();
-  if (!name) {
+  if (!newName) {
     showToast("Display name cannot be empty", "error");
     return;
   }
 
-  try {
-    await updateProfile(currentUser, { displayName: name });
-    showToast("Display name updated", "success");
-  } catch (e) {
-    console.error(e);
-    showToast(e.message || "Failed to update display name", "error");
-  }
-};
+  /* Logged-in user → Firebase */
+  if (currentUser) {
+    if (newName === currentUser.displayName) {
+      showToast("Display name unchanged", "info");
+      return;
+    }
 
-/* ---------- Delete account + data ---------- */
-deleteAccountBtn.onclick = async () => {
+    try {
+      await updateProfile(currentUser, { displayName: newName });
+      showToast("Display name updated", "success");
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to update display name", "error");
+    }
+    return;
+  }
+
+  /* Guest → localStorage */
+  if (newName === localStorage.getItem("displayName")) {
+    showToast("Display name unchanged", "info");
+    return;
+  }
+
+  localStorage.setItem("displayName", newName);
+  showToast("Display name updated", "success");
+}
+
+/* Save via button */
+saveNameBtn.addEventListener("click", saveDisplayName);
+
+/* Save via Enter */
+displayNameInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    saveDisplayName();
+  }
+});
+
+/* ---------- Danger Zone ---------- */
+
+/* Reset local progress */
+resetProgressBtn.addEventListener("click", () => {
+  const ok = confirm(
+    "This will erase all local progress.\nThis action cannot be undone.\n\nContinue?"
+  );
+
+  if (!ok) return;
+
+  localStorage.clear();
+  showToast("Local progress wiped", "info");
+});
+
+/* Delete account (logged-in only) */
+deleteAccountBtn.addEventListener("click", async () => {
   if (!currentUser) return;
 
   const ok = confirm(
-    "This will permanently delete your account AND all your data.\nThis cannot be undone."
+    "This will permanently delete your account.\n\nThis CANNOT be undone.\n\nContinue?"
   );
 
   if (!ok) return;
 
   try {
-    // 1️⃣ delete Firestore user data FIRST
-    await deleteDoc(doc(db, "users", currentUser.uid));
-
-    // 2️⃣ delete auth account
     await deleteUser(currentUser);
-
-    showToast("Account and data deleted", "success");
-
-    setTimeout(() => {
-      window.location.href = "index.html";
-    }, 1000);
-  } catch (e) {
-    console.error(e);
-    showToast(e.message || "Failed to delete account", "error");
+    showToast("Account deleted", "success");
+    window.location.href = "index.html";
+  } catch (err) {
+    console.error(err);
+    showToast("Deletion failed. Please sign out and sign in again.", "error");
   }
-};
+});

@@ -1,91 +1,101 @@
 /**
  * File         : docs/scripts/topic.js
- * Description  : Logic for topic page.
+ * Description  : Topic page logic (render + progress updates)
  */
 
-import {
-  doc,
-  setDoc,
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { auth, db } from "./firebase.js";
-import { fetchJSON, progressKey, isCompleted } from "./main.js";
+import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
 
-/* ---------- Sync helper ---------- */
+(async function () {
+  const params = new URLSearchParams(window.location.search);
+  const topicFile = params.get("topic");
 
-async function saveProgress(key, value) {
-  localStorage.setItem(key, value ? "true" : "false");
+  if (!topicFile) {
+    console.error("Missing topic file in URL");
+    return;
+  }
 
-  const user = auth.currentUser;
-  if (!user) return;
+  document.title = `Strivers OpenSheet | ${topicFile}`;
 
-  const ref = doc(db, "users", user.uid);
-  await setDoc(
-    ref,
-    {
-      progress: {
-        [key]: value,
-      },
-    },
-    { merge: true }
-  );
-}
+  let topicData;
+  try {
+    topicData = await fetchJSON(`data/topics/${topicFile}.json`);
+  } catch (e) {
+    console.error("Failed to load topic file", e);
+    return;
+  }
 
-/* ---------- Params ---------- */
+  const topicId = topicData["topic-id"];
+  if (topicId === undefined) {
+    console.error("topic-id missing in topic JSON");
+    return;
+  }
 
-const params = new URLSearchParams(window.location.search);
-const topicId = params.get("topic");
+  const titleEl = document.getElementById("topic-title");
+  const tbody = document.getElementById("topic-table-body");
 
-if (!topicId) {
-  throw new Error("No topic specified");
-}
+  if (!titleEl || !tbody) return;
+
+  tbody.innerHTML = "";
+
+  const total = topicData.problems.length;
+
+  /* ---------- Initial progress from cache ---------- */
+  let done = Number(localStorage.getItem(`topic-progress:${topicId}`)) || 0;
+
+  titleEl.innerHTML = `
+    ${topicData.title}
+    <span class="progress">(${done} / ${total})</span>
+  `;
+
+  const progressEl = titleEl.querySelector(".progress");
+
+  /* ---------- Render problems ---------- */
+  for (const problem of topicData.problems) {
+    const problemId = problem["problem-id"];
+    const completed = getProblemStatus(topicId, problemId);
+
+    const tr = document.createElement("tr");
+
+    tr.innerHTML = `
+      <td>${problem.name}</td>
+      <td>${renderLink(problem.video)}</td>
+      <td>${renderLink(problem.resource)}</td>
+      <td>${renderLink(problem.reference)}</td>
+      <td>${renderLink(problem.practice)}</td>
+      <td>
+        <span class="badge ${problem.difficulty.toLowerCase()}">
+          ${problem.difficulty}
+        </span>
+      </td>
+      <td>
+        <input type="checkbox" ${completed ? "checked" : ""} />
+      </td>
+    `;
+
+    const checkbox = tr.querySelector("input");
+
+    checkbox.addEventListener("change", () => {
+      const checked = checkbox.checked;
+      const prev = getProblemStatus(topicId, problemId);
+
+      if (prev === checked) return;
+
+      setProblemStatus(topicId, problemId, checked);
+
+      done += checked ? 1 : -1;
+      progressEl.textContent = `(${done} / ${total})`;
+
+      localStorage.setItem(`topic-progress:${topicId}`, done);
+    });
+
+    tbody.appendChild(tr);
+  }
+})();
 
 /* ---------- Helpers ---------- */
-
 function renderLink(obj) {
   if (!obj || !obj.url) return "-";
   return `<a href="${obj.url}" target="_blank" rel="noopener">
     ${obj.label || "Link"}
   </a>`;
 }
-
-/* ---------- Load problems ---------- */
-
-fetchJSON(`data/${topicId}.json`)
-  .then((problems) => {
-    const tbody = document.getElementById("topic-table-body");
-    if (!tbody) return;
-
-    problems.forEach((p) => {
-      const key = progressKey(topicId, p.id);
-      const checked = isCompleted(topicId, p.id);
-
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td>${p.name}</td>
-        <td>${renderLink(p.video)}</td>
-        <td>${renderLink(p.resource)}</td>
-        <td>${renderLink(p.reference)}</td>
-        <td>${renderLink(p.practice)}</td>
-        <td>
-          <span class="badge ${p.difficulty.toLowerCase()}">
-            ${p.difficulty}
-          </span>
-        </td>
-        <td>
-          <input type="checkbox" ${checked ? "checked" : ""} />
-        </td>
-      `;
-
-      const checkbox = tr.querySelector("input");
-      checkbox.addEventListener("change", async (e) => {
-        try {
-          await saveProgress(key, e.target.checked);
-        } catch (err) {
-          console.error("Failed to sync progress", err);
-        }
-      });
-
-      tbody.appendChild(tr);
-    });
-  })
-  .catch((err) => console.error("Failed to load topic data", err));
