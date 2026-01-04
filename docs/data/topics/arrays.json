@@ -1,0 +1,846 @@
+{
+  "title": "Solve Problems on Arrays [Easy -> Medium -> Hard]",
+  "topic-id": 3,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Largest Element in an Array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/37E9ckMDdTk?t=526"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Second Largest Element in an Array without sorting",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/37E9ckMDdTk?t=810"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 3,
+      "name": "Check if the array is sorted",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/37E9ckMDdTk?t=17224"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/check-if-an-array-is-sorted/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums."
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 4,
+      "name": "Remove duplicates from Sorted array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/37E9ckMDdTk?t=1887"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/#:~:text=Input%3A%20nums%20%3D%20%5B0%2C,%2C%203%2C%20and%204%20respectively."
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Left Rotate an array by one place",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/wvcQg43_V8U?t=61"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/left-rotate-the-array-by-one/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/rotate-array/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "Left rotate an array by D places",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/wvcQg43_V8U?t=485"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/rotate-array-by-k-elements/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/rotate-array/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 7,
+      "name": "Move Zeros to end",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/wvcQg43_V8U?t=1633"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/move-zeroes/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 8,
+      "name": "Linear Search",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/wvcQg43_V8U?t=2465"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/linear-search-in-c/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 9,
+      "name": "Find the Union",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/wvcQg43_V8U?t=2584"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/union-of-two-sorted-arrays/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 10,
+      "name": "Find missing number in an array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/bYWLJb3vCWY?t=57"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/find-the-missing-number-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/missing-number/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 11,
+      "name": "Maximum Consecutive Ones",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/bYWLJb3vCWY?t=1124"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-maximum-consecutive-ones-in-the-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/max-consecutive-ones/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 12,
+      "name": "Find the number that appears once, and other numbers twice.",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/bYWLJb3vCWY?t=1369"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/single-number/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 13,
+      "name": "Longest subarray with given sum K(positives)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=frf7qxiN2qU&feature=youtu.be"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 14,
+      "name": "Longest subarray with sum K (Positives + Negatives)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=frf7qxiN2qU"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/longest-subarray-with-sum-k-postives-and-negatives/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 15,
+      "name": "2Sum Problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/UXDSeD9mN-k"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/two-sum-check-if-a-pair-with-given-sum-exists-in-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/two-sum/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 16,
+      "name": "Sort an array of 0's 1's and 2's",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/tp8JIuCXBaU"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/sort-colors/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 17,
+      "name": "Majority Element (>n/2 times)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/nP_ns3uSh80"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/majority-element/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 18,
+      "name": "Kadane's Algorithm, maximum subarray sum",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/AHZpyENo7k4?si=QJpof4R1hHokm1hw"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-subarray/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 19,
+      "name": "Print subarray with maximum subarray sum (extended version of above problem)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/AHZpyENo7k4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 20,
+      "name": "Stock Buy and Sell",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/excAOvwF_Wk"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/stock-buy-and-sell/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 21,
+      "name": "Rearrange the array in alternating positive and negative items",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/h4aBagy4Uok"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/rearrange-array-elements-by-sign/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/rearrange-array-elements-by-sign/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 22,
+      "name": "Next Permutation",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/JDOXKqF60RQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/next-permutation/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 23,
+      "name": "Leaders in an Array problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/cHrH9CQ8pmY"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/leaders-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 24,
+      "name": "Longest Consecutive Sequence in an Array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/oO5uLE7EUlM"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/longest-consecutive-sequence/solution/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 25,
+      "name": "Set Matrix Zeros",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/N0MgLvceX7M"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/set-matrix-zero/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 26,
+      "name": "Rotate Matrix by 90 degrees",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/Z0R2u6gd3GU"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/rotate-image-by-90-degree/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/rotate-image/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 27,
+      "name": "Print the matrix in spiral manner",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/3Zv-s9UUrFM"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/spiral-traversal-of-matrix/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/spiral-matrix/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 28,
+      "name": "Count subarrays with given sum",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=xvNwoz-ufXA&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=32"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/count-subarray-sum-equals-k/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/subarray-sum-equals-k/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 29,
+      "name": "Pascal's Triangle",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/bR7mQgwQ_o8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/program-to-generate-pascals-triangle"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/pascals-triangle/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 30,
+      "name": "Majority Element (n/3 times)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/vwZj1K0e9U8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/majority-elementsn-3-times-find-the-elements-that-appears-more-than-n-3-times-in-the-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/majority-element-ii/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 31,
+      "name": "3-Sum Problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/DhFh8Kw7ymk"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/3sum/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 32,
+      "name": "4-Sum Problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/eD95WRfh81c"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/4sum/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 33,
+      "name": "Largest Subarray with 0 Sum",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/length-of-the-longest-subarray-with-zero-sum/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 34,
+      "name": "Count number of subarrays with given xor K",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/eZr-6p0B7ME"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-the-number-of-subarrays-with-given-xor-k/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 35,
+      "name": "Merge Overlapping Subintervals",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/IexN60k62jo"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/merge-overlapping-sub-intervals/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/merge-intervals/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 36,
+      "name": "Merge two sorted arrays without extra space",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/n7uwj04E0I4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/merge-two-sorted-arrays-without-extra-space/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/merge-sorted-array/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 37,
+      "name": "Find the repeating and missing number",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/2D0D8HE6uak"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-the-repeating-and-missing-numbers/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 38,
+      "name": "Count Inversions",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/AseUmwVNaoY"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-inversions-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 39,
+      "name": "Reverse Pairs",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/0e4bZaP3MDI"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/count-reverse-pairs/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/reverse-pairs/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 40,
+      "name": "Maximum Product Subarray",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/hnswaLJvr6g"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-product-subarray-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-product-subarray/"
+      },
+      "difficulty": "Hard"
+    }
+  ]
+}

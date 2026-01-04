@@ -1,0 +1,177 @@
+/**
+ * File         : styles/settings.css
+ * Description  : Account settings page styles
+ */
+
+/* ---------- Page container ---------- */
+
+.settings-block {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+/* ---------- Headings ---------- */
+
+.settings-block h1 {
+  margin-bottom: 8px;
+}
+
+.context {
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+/* ---------- Sections ---------- */
+
+.settings-general-section,
+.settings-danger-section {
+  margin-top: 32px;
+}
+
+.settings-general-section h2 {
+  margin-bottom: 16px;
+}
+
+.settings-danger-section h2 {
+  margin-bottom: 16px;
+  color: var(--hard);
+}
+
+/* ---------- General ---------- */
+
+.display-box {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Display picture */
+.display-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#displayPic {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+  cursor: default;
+  box-shadow: none;
+}
+
+#displayPic:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Display name */
+.display-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-name label {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+#displayName {
+  max-width: 360px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg);
+}
+
+#displayName:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#saveName {
+  margin-top: 10px;
+  width: fit-content;
+
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  cursor: pointer;
+}
+
+#saveName:hover {
+  border-color: var(--accent);
+}
+
+/* ---------- Danger Zone ---------- */
+
+.danger-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.danger-box button {
+  width: 260px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  cursor: pointer;
+  text-align: center;
+}
+
+.danger-box button:hover {
+  background: rgba(239, 68, 68, 0.08);
+}
+
+#deleteAccount {
+  display: none;
+  border-color: var(--hard);
+  color: var(--hard);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  .settings-block {
+    margin: 32px auto;
+  }
+
+  .display-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .display-name label {
+    display: none;
+  }
+
+  .display-name {
+    width: 100%;
+    align-items: center;
+  }
+
+  .danger-box button {
+    width: 100%;
+  }
+}

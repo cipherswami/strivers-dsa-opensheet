@@ -1,68 +1,110 @@
 [
-  { "id": "basic", "name": "Learn the basics" },
-  { "id": "sorting", "name": "Learn Important Sorting Techniques" },
   {
-    "id": "arrays",
-    "name": "Solve Problems on Arrays [Easy -> Medium -> Hard]"
+    "topic-id": 1,
+    "file": "basic",
+    "title": "Learn the basics",
+    "total": 31
   },
   {
-    "id": "binary-search",
-    "name": "Binary Search [1D, 2D Arrays, Search Space]"
+    "topic-id": 2,
+    "file": "sorting",
+    "title": "Learn Important Sorting Techniques",
+    "total": 7
   },
   {
-    "id": "strings-basic",
-    "name": "Strings [Basic and Medium]"
+    "topic-id": 3,
+    "file": "arrays",
+    "title": "Solve Problems on Arrays [Easy -> Medium -> Hard]",
+    "total": 40
   },
   {
-    "id": "linked-list",
-    "name": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]"
+    "topic-id": 4,
+    "file": "binary-search",
+    "title": "Binary Search [1D, 2D Arrays, Search Space]",
+    "total": 32
   },
   {
-    "id": "recursion",
-    "name": "Recursion [PatternWise]"
+    "topic-id": 5,
+    "file": "strings-basic",
+    "title": "Strings [Basic and Medium]",
+    "total": 15
   },
   {
-    "id": "bit-manipulation",
-    "name": "Bit Manipulation [Concepts & Problems]"
+    "topic-id": 6,
+    "file": "linked-list",
+    "title": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]",
+    "total": 31
   },
   {
-    "id": "stack-queues",
-    "name": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
+    "topic-id": 7,
+    "file": "recursion",
+    "title": "Recursion [PatternWise]",
+    "total": 25
   },
   {
-    "id": "sliding-pointers",
-    "name": "Sliding Window & Two Pointer Combined Problems"
+    "topic-id": 8,
+    "file": "bit-manipulation",
+    "title": "Bit Manipulation [Concepts & Problems]",
+    "total": 18
   },
   {
-    "id": "heaps",
-    "name": "Heaps [Learning, Medium, Hard Problems]"
+    "topic-id": 9,
+    "file": "stack-queues",
+    "title": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+    "total": 30
   },
   {
-    "id": "greedy",
-    "name": "Greedy Algorithms [Easy, Medium/Hard]"
+    "topic-id": 10,
+    "file": "sliding-pointers",
+    "title": "Sliding Window & Two Pointer Combined Problems",
+    "total": 12
   },
   {
-    "id": "binary-tree",
-    "name": "Binary Trees [Traversals, Medium and Hard Problems]"
+    "topic-id": 11,
+    "file": "heaps",
+    "title": "Heaps [Learning, Medium, Hard Problems]",
+    "total": 17
   },
   {
-    "id": "bst",
-    "name": "Binary Search Trees [Concept and Problems]"
+    "topic-id": 12,
+    "file": "greedy",
+    "title": "Greedy Algorithms [Easy, Medium/Hard]",
+    "total": 16
   },
   {
-    "id": "graphs",
-    "name": "Graphs [Concepts & Problems]"
+    "topic-id": 13,
+    "file": "binary-tree",
+    "title": "Binary Trees [Traversals, Medium and Hard Problems]",
+    "total": 39
   },
   {
-    "id": "dp",
-    "name": "Dynamic Programming [Patterns and Problems]"
+    "topic-id": 14,
+    "file": "bst",
+    "title": "Binary Search Trees [Concept and Problems]",
+    "total": 16
   },
   {
-    "id": "tries",
-    "name": "Tries"
+    "topic-id": 15,
+    "file": "graphs",
+    "title": "Graphs [Concepts & Problems]",
+    "total": 54
   },
   {
-    "id": "strings-hard",
-    "name": "Strings"
+    "topic-id": 16,
+    "file": "dp",
+    "title": "Dynamic Programming [Patterns and Problems]",
+    "total": 56
+  },
+  {
+    "topic-id": 17,
+    "file": "tries",
+    "title": "Tries",
+    "total": 7
+  },
+  {
+    "topic-id": 18,
+    "file": "strings-hard",
+    "title": "Strings",
+    "total": 9
   }
 ]

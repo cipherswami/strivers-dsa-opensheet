@@ -1,0 +1,342 @@
+{
+  "title": "Greedy Algorithms [Easy, Medium/Hard]",
+  "topic-id": 12,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Assign Cookies",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/assign-cookies"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/assign-cookies/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Fractional Knapsack Problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/fractional-knapsack-problem-greedy-approach/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 3,
+      "name": "Greedy algorithm to find minimum number of coins",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=48"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/find-minimum-number-of-coins/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 4,
+      "name": "Lemonade Change",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/n_tmibEhO6Q?si=q1NW8MfPy0QU6fIl"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/Greedy/lemonade-change"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/lemonade-change/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 5,
+      "name": "Valid Paranthesis Checker",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/cHT6sG_hUZI?si=XRHeyh7jOaLaTy3g"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/valid-paranthesis-checker"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/valid-parenthesis-string/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 6,
+      "name": "N meetings in one room",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/n-meetings-in-one-room/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 7,
+      "name": "Jump Game",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/tZAa_jJ3SwQ?si=voKd7n9VTLDRRNzJ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/Greedy/jump-game-i"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/jump-game/"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 8,
+      "name": "Jump Game 2",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/7SBVnw7GSTk?si=9uUouBELh9K3m2jZ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/jump-game-2"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/jump-game-ii/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 9,
+      "name": "Minimum number of platforms required for a railway",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/minimum-number-of-platforms-required-for-a-railway/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 10,
+      "name": "Job sequencing Problem",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/job-sequencing-problem/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 11,
+      "name": "Candy",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/IIqVFvKE6RY?si=EjmuXZJNLQLUkEd7"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/candy"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/candy/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 12,
+      "name": "Program for Shortest Job First (or SJF) CPU Scheduling",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/3-QbX1iDbXs?si=IH8QZUblr01F7UoQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/Greedy/shortest-job-first-or-sjf-cpu-scheduling"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 13,
+      "name": "Program for Least Recently Used (LRU) Page Replacement Algorithm",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/program-for-least-recently-used-lru-page-replacement-algorithm"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 14,
+      "name": "Insert Interval",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/xxRE-46OCC8?si=a7aPuIw16zDx2lAa"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/?s=Insert+Interval"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/insert-interval/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 15,
+      "name": "Merge Intervals",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/merge-overlapping-sub-intervals/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/merge-intervals/"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 16,
+      "name": "Non-overlapping Intervals",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/HDHQ8lAWakY?si=JVtLqboGdpUTOVjf"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/non-overlapping-intervals"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/non-overlapping-intervals/"
+      },
+      "difficulty": "Medium"
+    }
+  ]
+}

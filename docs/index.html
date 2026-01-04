@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta data -->
     <meta charset="UTF-8" />
-    <title>Strivers OpenSheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.svg" />
+    <meta
+      name="description"
+      content="Striver's OpenSheet is free DSA practice sheet made with free resources and free practice problems."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0f172a" />
+    <!-- Title -->
+    <title>Striver’s OpenSheet</title>
+    <!-- Assets -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/header.css" />
   </head>
   <body>
-    <!-- Section 1: Auth section -->
-    <div id="authArea">
-      <button id="loginBtn">Login</button>
-
-      <div id="userMenu" class="hidden">
+    <header id="authArea">
+      <div id="userMenu">
         <button id="userBtn">
-          <img id="userPic" />
-          <span id="userName"></span> ▼
+          <img id="userPic" src="assets/guest.png" alt="DP" />
+          <span id="userName">Guest User</span>
+          <span class="caret">▾</span>
         </button>
 
         <div id="dropdown" class="hidden">
           <button id="settingsBtn">Settings</button>
-          <button id="logoutBtn">Logout</button>
+          <button id="authBtn">Login</button>
         </div>
       </div>
-    </div>
-
+    </header>
     <!-- Section 2: Context -->
-    <section class="section">
+    <section class="section main-body">
       <p class="context">
         Striver's OpenSheet is a free DSA practice sheet inspired by the roadmap
         created by
@@ -36,27 +57,23 @@
         >. This sheet curates publicly available free resources and free
         practice problems.
       </p>
-
       <p class="context">
         For a more structured learning experience with video explanations and
         in-depth tutorials, visit Striver's official platform:
         <a href="https://takeuforward.org" target="_blank"> takeuforward.org</a
         >.
       </p>
-
       <p class="context">
         Special thanks to Striver for creating such an incredible resource for
         the programming community!
       </p>
     </section>
-
     <!-- Section 3: DSA Sheet -->
     <section class="section">
       <h2>
         Striver's DSA Sheet
         <span id="overall-progress" class="progress">(0 / 0)</span>
       </h2>
-
       <table class="topics-table">
         <thead>
           <tr>
@@ -64,13 +81,14 @@
             <th class="count">Problems</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- populated by JS -->
+        <tbody id="topics-body">
+          <!-- populated at runtime -->
         </tbody>
       </table>
     </section>
   </body>
+  <!-- Scripts -->
   <script type="module" src="scripts/main.js"></script>
   <script type="module" src="scripts/index.js"></script>
-  <script type="module" src="scripts/auth.js"></script>
+  <script type="module" src="scripts/header.js"></script>
 </html>

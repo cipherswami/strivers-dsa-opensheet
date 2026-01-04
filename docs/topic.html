@@ -2,34 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Strivers OpenSheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.svg" />
+
+    <meta
+      name="description"
+      content="Striver's OpenSheet is free DSA practice sheet made with free resources and free practice problems."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <title>Striver’s OpenSheet</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/topic.css" />
   </head>
+
   <body>
-    <a class="back" href="index.html">← Back</a>
+    <main class="topic-page">
+      <a class="back" href="index.html">← Back</a>
 
-    <h1 id="topic-title"></h1>
+      <h1 id="topic-title"></h1>
 
-    <table class="topic-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Video</th>
-          <th>Resource</th>
-          <th>Reference</th>
-          <th>Practice</th>
-          <th>Difficulty</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody id="topic-table-body">
-        <!-- populated by JS -->
-      </tbody>
-    </table>
+      <table class="topic-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Video</th>
+            <th>Resource</th>
+            <th>Reference</th>
+            <th>Practice</th>
+            <th>Difficulty</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="topic-table-body">
+          <tr>
+            <td colspan="7" class="muted">Loading problems…</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/topic.js"></script>
   </body>
-  <script type="module" src="scripts/main.js"></script>
-  <script type="module" src="scripts/topic.js"></script>
 </html>

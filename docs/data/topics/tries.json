@@ -1,0 +1,153 @@
+{
+  "title": "Tries",
+  "topic-id": 17,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Implement TRIE | INSERT | SEARCH | STARTSWITH",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/implement-trie-1/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 2,
+      "name": "Implement Trie - 2 (Prefix Tree)",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/implement-trie-ii/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 3,
+      "name": "Longest String with All Prefixes",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 4,
+      "name": "Number of Distinct Substrings in a String",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/number-of-distinct-substrings-in-a-string-using-trie/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 5,
+      "name": "Bit PreRequisites for TRIE Problems",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/5iyuU4hQFrw"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": ""
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 6,
+      "name": "Maximum XOR of two numbers in an array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/maximum-xor-of-two-numbers-in-an-array/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "problem-id": 7,
+      "name": "Maximum XOR With an Element From Array",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/trie/maximum-xor-queries-trie/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "LeetCode",
+        "url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+      },
+      "difficulty": "Hard"
+    }
+  ]
+}

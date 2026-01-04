@@ -1,0 +1,153 @@
+{
+  "title": "Learn Important Sorting Techniques",
+  "topic-id": 2,
+  "problems": [
+    {
+      "problem-id": 1,
+      "name": "Selection Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/HGk_ypEuS24?t=167"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/sorting/selection-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 2,
+      "name": "Bubble Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/HGk_ypEuS24?t=1061"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/bubble-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 3,
+      "name": "Insertion Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/HGk_ypEuS24?t=1900"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/insertion-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 4,
+      "name": "Merge Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/ogjf7ORKfd8"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/merge-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 5,
+      "name": "Recursive Bubble Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "problem-id": 6,
+      "name": "Recursive Insertion Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": ""
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/arrays/recursive-insertion-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "problem-id": 7,
+      "name": "Quick Sort",
+      "video": {
+        "label": "YouTube (Striver)",
+        "url": "https://youtu.be/WIrA4YexLRQ"
+      },
+      "resource": {
+        "label": "TakeUForward",
+        "url": "https://takeuforward.org/data-structure/quick-sort-algorithm/"
+      },
+      "reference": {
+        "label": "",
+        "url": ""
+      },
+      "practice": {
+        "label": "",
+        "url": ""
+      },
+      "difficulty": "Easy"
+    }
+  ]
+}
