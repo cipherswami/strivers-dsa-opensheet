@@ -3,13 +3,17 @@
  * Description  : Settings page logic (guest + logged-in)
  */
 
-import { auth } from "./firebase.js";
+import { auth, db } from "./firebase.js";
+import { showToast } from "./main.js";
 import {
   onAuthStateChanged,
   updateProfile,
   deleteUser,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { showToast } from "./main.js";
+import {
+  deleteDoc,
+  doc,
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 /* ---------- DOM ---------- */
 const emailEl = document.getElementById("email");
@@ -36,8 +40,6 @@ onAuthStateChanged(auth, (user) => {
       localStorage.getItem("displayName") || "Guest User";
     deleteAccountBtn.style.display = "none";
   }
-
-  console.log("Auth");
 });
 
 /* ---------- Display Name ---------- */
@@ -89,16 +91,26 @@ displayNameInput.addEventListener("keydown", (e) => {
 
 /* ---------- Danger Zone ---------- */
 
-/* Reset local progress */
-resetProgressBtn.addEventListener("click", () => {
+/* Reset progress */
+resetProgressBtn.addEventListener("click", async () => {
   const ok = confirm(
-    "This will erase all local progress.\nThis action cannot be undone.\n\nContinue?"
+    "This will erase ALL progress.\nThis action cannot be undone.\n\nContinue?"
   );
 
   if (!ok) return;
 
-  localStorage.clear();
-  showToast("Local progress wiped", "info");
+  try {
+    if (currentUser) {
+      await deleteDoc(doc(db, "users", currentUser.uid));
+    }
+
+    localStorage.clear();
+
+    showToast("Progress nuked successfully", "info");
+  } catch (err) {
+    console.error(err);
+    showToast("Failed to reset progress", "error");
+  }
 });
 
 /* Delete account (logged-in only) */
@@ -112,7 +124,13 @@ deleteAccountBtn.addEventListener("click", async () => {
   if (!ok) return;
 
   try {
+    /* delete Firestore data first */
+    await deleteDoc(doc(db, "users", currentUser.uid));
+
+    /* then delete auth user */
     await deleteUser(currentUser);
+
+    localStorage.clear();
     showToast("Account deleted", "success");
     window.location.href = "index.html";
   } catch (err) {

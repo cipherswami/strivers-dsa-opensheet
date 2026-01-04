@@ -4,6 +4,12 @@
  */
 
 import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
+import { auth, db } from "./firebase.js";
+import {
+  setDoc,
+  doc,
+  deleteField,
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 (async function () {
   const params = new URLSearchParams(window.location.search);
@@ -39,7 +45,6 @@ import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
 
   const total = topicData.problems.length;
 
-  /* ---------- Initial progress from cache ---------- */
   let done = Number(localStorage.getItem(`topic-progress:${topicId}`)) || 0;
 
   titleEl.innerHTML = `
@@ -48,11 +53,13 @@ import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
   `;
 
   const progressEl = titleEl.querySelector(".progress");
+  done = 0;
 
-  /* ---------- Render problems ---------- */
   for (const problem of topicData.problems) {
     const problemId = problem["problem-id"];
     const completed = getProblemStatus(topicId, problemId);
+
+    if (completed) done++;
 
     const tr = document.createElement("tr");
 
@@ -74,22 +81,47 @@ import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
 
     const checkbox = tr.querySelector("input");
 
-    checkbox.addEventListener("change", () => {
+    checkbox.addEventListener("change", async () => {
       const checked = checkbox.checked;
       const prev = getProblemStatus(topicId, problemId);
 
       if (prev === checked) return;
 
+      /* ---------- local truth ---------- */
       setProblemStatus(topicId, problemId, checked);
 
       done += checked ? 1 : -1;
-      progressEl.textContent = `(${done} / ${total})`;
 
+      progressEl.textContent = `(${done} / ${total})`;
       localStorage.setItem(`topic-progress:${topicId}`, done);
+
+      /* ---------- cloud sync (flat keys) ---------- */
+      if (auth.currentUser) {
+        try {
+          await setDoc(
+            doc(db, "users", auth.currentUser.uid),
+            checked
+              ? {
+                  [`problem-status:${topicId}:${problemId}`]: true,
+                  [`topic-progress:${topicId}`]: done,
+                }
+              : {
+                  [`problem-status:${topicId}:${problemId}`]: deleteField(),
+                  [`topic-progress:${topicId}`]: done,
+                },
+            { merge: true }
+          );
+        } catch (err) {
+          console.error("Cloud sync failed:", err);
+        }
+      }
     });
 
     tbody.appendChild(tr);
   }
+
+  localStorage.setItem(`topic-progress:${topicId}`, done);
+  progressEl.textContent = `(${done} / ${total})`;
 })();
 
 /* ---------- Helpers ---------- */

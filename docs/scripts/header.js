@@ -1,5 +1,5 @@
 /**
- * File         : docs/scripts/auth.js
+ * File         : docs/scripts/header.js
  * Description  : Header user menu logic (Guest / Google login)
  */
 
@@ -11,6 +11,12 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import {
+  getDoc,
+  setDoc,
+  doc,
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { db } from "./firebase.js";
 
 /* ---------- DOM ---------- */
 const userMenu = document.getElementById("userMenu");
@@ -49,7 +55,7 @@ authBtn.addEventListener("click", async (e) => {
   if (auth.currentUser) {
     try {
       await signOut(auth);
-      showToast("Logged out", "info");
+      showToast("Logged out successfully", "info");
     } catch (err) {
       console.error(err);
       showToast("Logout failed", "error");
@@ -67,12 +73,42 @@ authBtn.addEventListener("click", async (e) => {
 });
 
 /* ---------- Auth state ---------- */
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
   if (user) {
+    /* ---------- UI ---------- */
     userName.textContent = user.displayName || "Striver Jr";
     userPic.src = user.photoURL || "assets/guest.png";
     authBtn.textContent = "Logout";
+
+    /* SYNC: cloud ⇄ local (ONCE PER LOGIN) */
+    try {
+      const ref = doc(db, "users", user.uid);
+      const snap = await getDoc(ref);
+
+      /* ---- cloud → local ---- */
+      if (snap.exists()) {
+        const data = snap.data();
+        for (const key in data) {
+          localStorage.setItem(key, String(data[key]));
+        }
+      }
+
+      /* ---- local → cloud ---- */
+      const payload = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const val = localStorage.getItem(key);
+
+        // boolean or number
+        payload[key] = val === "true" ? true : Number(val);
+      }
+
+      await setDoc(ref, payload, { merge: true });
+    } catch (err) {
+      console.error("Sync failed:", err);
+    }
   } else {
+    /* ---------- Guest UI ---------- */
     userName.textContent = "Guest User";
     userPic.src = "assets/guest.png";
     authBtn.textContent = "Login";
