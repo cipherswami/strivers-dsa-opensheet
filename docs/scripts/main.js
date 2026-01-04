@@ -27,7 +27,7 @@ export async function fetchJSON(path) {
  * @returns {string}
  */
 export function problemProgressKey(topicId, problemId) {
-  return `progress:${topicId}:${problemId}`;
+  return `problem-status:${topicId}:${problemId}`;
 }
 
 /**
