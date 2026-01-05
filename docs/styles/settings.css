@@ -131,13 +131,14 @@
   width: 260px;
   padding: 12px 16px;
   font-size: 0.9rem;
-  border-radius: 12px;
-
+  border-radius: 6px;
   background: transparent;
   border: 1px solid var(--border);
   color: var(--fg);
   cursor: pointer;
   text-align: center;
+  border-color: var(--hard);
+  color: var(--hard);
 }
 
 .danger-box button:hover {
@@ -146,8 +147,6 @@
 
 #deleteAccount {
   display: none;
-  border-color: var(--hard);
-  color: var(--hard);
 }
 
 /* ---------- Mobile ---------- */
