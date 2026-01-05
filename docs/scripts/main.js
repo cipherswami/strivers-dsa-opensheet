@@ -95,9 +95,3 @@ export function showToast(message, type = "info") {
     setTimeout(() => toast.remove(), 300);
   }, 3000);
 }
-
-// Register the service worker to enable offline support, caching,
-// and background updates (must be a separate file: /sw.js)
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
