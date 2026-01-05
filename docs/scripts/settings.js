@@ -104,9 +104,11 @@ resetProgressBtn.addEventListener("click", async () => {
       await deleteDoc(doc(db, "users", currentUser.uid));
     }
 
-    localStorage.clear();
-
     showToast("Progress nuked successfully", "info");
+    localStorage.clear();
+    setTimeout(() => {
+      window.location.href = "settings.html";
+    }, 3000);
   } catch (err) {
     console.error(err);
     showToast("Failed to reset progress", "error");
@@ -124,14 +126,9 @@ deleteAccountBtn.addEventListener("click", async () => {
   if (!ok) return;
 
   try {
-    /* delete Firestore data first */
     await deleteDoc(doc(db, "users", currentUser.uid));
-
-    /* then delete auth user */
     await deleteUser(currentUser);
-
     localStorage.clear();
-    showToast("Account deleted", "success");
     window.location.href = "index.html";
   } catch (err) {
     console.error(err);

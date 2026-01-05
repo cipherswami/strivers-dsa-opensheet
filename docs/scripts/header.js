@@ -27,6 +27,9 @@ const dropdown = document.getElementById("dropdown");
 const authBtn = document.getElementById("authBtn");
 const settingsBtn = document.getElementById("settingsBtn");
 
+/* ---------- session guard key ---------- */
+const SYNC_KEY = "auth-sync-done";
+
 /* ---------- Dropdown toggle ---------- */
 userBtn.addEventListener("click", (e) => {
   e.stopPropagation();
@@ -52,66 +55,105 @@ authBtn.addEventListener("click", async (e) => {
   e.stopPropagation();
   dropdown.classList.add("hidden");
 
-  if (auth.currentUser) {
-    try {
+  try {
+    if (auth.currentUser) {
       await signOut(auth);
-      showToast("Logged out successfully", "info");
-    } catch (err) {
-      console.error(err);
-      showToast("Logout failed", "error");
-    }
-  } else {
-    try {
+      sessionStorage.removeItem(SYNC_KEY);
+      showToast("Logged out successfully", "success");
+    } else {
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
-      showToast("Logged in", "success");
-    } catch (err) {
-      console.error(err);
-      showToast("Login failed", "error");
+      showToast("Logged in successfully", "success");
     }
+  } catch (err) {
+    console.error(err);
+    showToast("Auth failed", "error");
   }
 });
 
 /* ---------- Auth state ---------- */
 onAuthStateChanged(auth, async (user) => {
-  if (user) {
-    /* ---------- UI ---------- */
-    userName.textContent = user.displayName || "Striver Jr";
-    userPic.src = user.photoURL || "assets/guest.png";
-    authBtn.textContent = "Logout";
-
-    /* SYNC: cloud ⇄ local (ONCE PER LOGIN) */
-    try {
-      const ref = doc(db, "users", user.uid);
-      const snap = await getDoc(ref);
-
-      /* ---- cloud → local ---- */
-      if (snap.exists()) {
-        const data = snap.data();
-        for (const key in data) {
-          localStorage.setItem(key, String(data[key]));
-        }
-      }
-
-      /* ---- local → cloud ---- */
-      const payload = {};
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const val = localStorage.getItem(key);
-
-        // boolean or number
-        payload[key] = val === "true" ? true : Number(val);
-      }
-
-      await setDoc(ref, payload, { merge: true });
-    } catch (err) {
-      console.error("Sync failed:", err);
-    }
-  } else {
+  if (!user) {
     /* ---------- Guest UI ---------- */
     userName.textContent = localStorage.getItem("displayName") || "Guest User";
     userPic.src = "assets/guest.png";
     authBtn.textContent = "Login";
+    sessionStorage.removeItem(SYNC_KEY);
+    return;
+  }
+
+  /* ---------- Logged-in UI ---------- */
+  userName.textContent = user.displayName || "Striver Jr";
+  userPic.src = user.photoURL || "assets/guest.png";
+  authBtn.textContent = "Logout";
+
+  /* ---------- Guard: run sync once per session ---------- */
+  if (sessionStorage.getItem(SYNC_KEY)) return;
+  sessionStorage.setItem(SYNC_KEY, "1");
+
+  /* ---------- SYNC: cloud ⇄ local (ONCE PER LOGIN) ---------- */
+  try {
+    const ref = doc(db, "users", user.uid);
+
+    /* 1. Fetch cloud problem-status */
+    const snap = await getDoc(ref);
+    const cloudStatus = {};
+
+    if (snap.exists()) {
+      const data = snap.data();
+      for (const key in data) {
+        if (key.startsWith("problem-status:") && data[key] === true) {
+          cloudStatus[key] = true;
+        }
+      }
+    }
+
+    /* 2. Push local problem-status to cloud */
+    const localPayload = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key.startsWith("problem-status:")) {
+        localPayload[key] = true;
+      }
+    }
+
+    if (Object.keys(localPayload).length) {
+      await setDoc(ref, localPayload, { merge: true });
+    }
+
+    /* 3. Merge cloud into local */
+    for (const key in cloudStatus) {
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, "true");
+      }
+    }
+
+    /* 4. Compute topic-progress from local */
+    const topicDone = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key.startsWith("problem-status:")) continue;
+
+      const [, topicId] = key.split(":");
+      topicDone[topicId] = (topicDone[topicId] || 0) + 1;
+    }
+
+    /* 5. Push topic-progress to cloud */
+    const progressPayload = {};
+    for (const topicId in topicDone) {
+      const k = `topic-progress:${topicId}`;
+      progressPayload[k] = topicDone[topicId];
+      localStorage.setItem(k, String(topicDone[topicId]));
+    }
+
+    if (Object.keys(progressPayload).length) {
+      await setDoc(ref, progressPayload, { merge: true });
+    }
+
+    // To update UI
+    location.reload();
+  } catch (err) {
+    console.error("Login sync failed:", err);
   }
 });
 
