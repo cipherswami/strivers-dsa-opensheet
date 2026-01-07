@@ -3,8 +3,13 @@
  * Description  : Topic page logic (render + progress updates)
  */
 
-import { fetchJSON, getProblemStatus, setProblemStatus } from "./main.js";
 import { auth, db } from "./firebase.js";
+import {
+  fetchJSON,
+  getProblemStatus,
+  setProblemStatus,
+  computeLocalHash,
+} from "./main.js";
 import {
   setDoc,
   doc,
@@ -94,6 +99,13 @@ import {
 
       progressEl.textContent = `(${done} / ${total})`;
       localStorage.setItem(`topic-progress:${topicId}`, done);
+      const localHash = await computeLocalHash();
+      localStorage.setItem("meta:syncHash", localHash);
+      await setDoc(
+        doc(db, "users", auth.currentUser.uid),
+        { "meta:syncHash": localHash },
+        { merge: true }
+      );
 
       /* ---------- cloud sync (flat keys) ---------- */
       if (auth.currentUser) {
