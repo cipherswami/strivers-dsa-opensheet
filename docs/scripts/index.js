@@ -4,6 +4,7 @@
  */
 
 import { fetchJSON } from "./main.js";
+import { computeLocalHash } from "./main.js";
 
 (async function () {
   const overallProgress = document.getElementById("overall-progress");
@@ -51,4 +52,12 @@ import { fetchJSON } from "./main.js";
   }
 
   overallProgress.textContent = `(${globalDone} / ${globalTotal})`;
+
+  /**
+   * Compute Localhash if null.
+   */
+  if (!localStorage.getItem("meta:syncHash")) {
+    const localHash = await computeLocalHash();
+    localStorage.setItem("meta:syncHash", localHash);
+  }
 })();

@@ -95,3 +95,27 @@ export function showToast(message, type = "info") {
     setTimeout(() => toast.remove(), 300);
   }, 3000);
 }
+
+/**
+ * Computes hash based on local storage data.
+ */
+export async function computeLocalHash() {
+  const entries = [];
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k.startsWith("problem-status:") || k.startsWith("topic-progress:")) {
+      entries.push(`${k}=${localStorage.getItem(k)}`);
+    }
+  }
+
+  entries.sort(); // CRITICAL: stable order
+
+  const data = entries.join("|");
+  const encoder = new TextEncoder();
+  const buf = await crypto.subtle.digest("SHA-256", encoder.encode(data));
+
+  return [...new Uint8Array(buf)]
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
