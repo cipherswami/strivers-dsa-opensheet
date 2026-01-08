@@ -66,6 +66,30 @@ export function setProblemStatus(topicId, problemId, value) {
 }
 
 /**
+ * Computes hash based on local storage data.
+ */
+export async function computeLocalHash() {
+  const entries = [];
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k.startsWith("problem-status:") || k.startsWith("topic-progress:")) {
+      entries.push(`${k}=${localStorage.getItem(k)}`);
+    }
+  }
+
+  entries.sort();
+
+  const data = entries.join("|");
+  const encoder = new TextEncoder();
+  const buf = await crypto.subtle.digest("SHA-256", encoder.encode(data));
+
+  return [...new Uint8Array(buf)]
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+/**
  * Show a toast notification.
  *
  * @param {string} message
@@ -97,25 +121,84 @@ export function showToast(message, type = "info") {
 }
 
 /**
- * Computes hash based on local storage data.
+ * Show a confirm dialog.
+ *
+ * @param {string} message
+ * @returns {Promise<boolean>}
  */
-export async function computeLocalHash() {
-  const entries = [];
+export async function confirmAsync(message) {
+  return new Promise((resolve) => {
+    /* ---------- Overlay ---------- */
+    const overlay = document.createElement("div");
+    overlay.className = "confirm-overlay";
 
-  for (let i = 0; i < localStorage.length; i++) {
-    const k = localStorage.key(i);
-    if (k.startsWith("problem-status:") || k.startsWith("topic-progress:")) {
-      entries.push(`${k}=${localStorage.getItem(k)}`);
-    }
-  }
+    /* ---------- Box ---------- */
+    const box = document.createElement("div");
+    box.className = "confirm-box";
 
-  entries.sort(); // CRITICAL: stable order
+    /* ---------- Text ---------- */
+    const text = document.createElement("p");
+    text.textContent = message;
 
-  const data = entries.join("|");
-  const encoder = new TextEncoder();
-  const buf = await crypto.subtle.digest("SHA-256", encoder.encode(data));
+    /* ---------- Actions ---------- */
+    const actions = document.createElement("div");
+    actions.className = "confirm-actions";
 
-  return [...new Uint8Array(buf)]
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join("");
+    const yesBtn = document.createElement("button");
+    yesBtn.textContent = "Yes";
+    yesBtn.className = "confirm-yes";
+
+    const noBtn = document.createElement("button");
+    noBtn.textContent = "Cancel";
+    noBtn.className = "confirm-no";
+
+    actions.appendChild(yesBtn);
+    actions.appendChild(noBtn);
+
+    box.appendChild(text);
+    box.appendChild(actions);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+
+    /* ---------- Animate in ---------- */
+    requestAnimationFrame(() => {
+      overlay.classList.add("show");
+    });
+
+    /* ---------- Cleanup helper ---------- */
+    const cleanup = (result) => {
+      overlay.classList.remove("show");
+      setTimeout(() => overlay.remove(), 200);
+      resolve(result);
+    };
+
+    /* ---------- Events ---------- */
+    yesBtn.onclick = () => cleanup(true);
+    noBtn.onclick = () => cleanup(false);
+
+    overlay.onclick = (e) => {
+      if (e.target === overlay) cleanup(false);
+    };
+
+    document.addEventListener(
+      "keydown",
+      function escHandler(e) {
+        if (e.key === "Escape") {
+          document.removeEventListener("keydown", escHandler);
+          cleanup(false);
+        }
+      },
+      { once: true }
+    );
+  });
+}
+
+/**
+ * Queue a toast to be shown on the next page load.
+ *
+ * @param {string} message
+ * @param {"info"|"success"|"error"} type
+ */
+export function setPostToast(message, type = "info") {
+  sessionStorage.setItem("POST_TOAST", JSON.stringify({ message, type }));
 }

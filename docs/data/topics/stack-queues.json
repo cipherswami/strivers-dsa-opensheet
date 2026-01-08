@@ -182,12 +182,12 @@
         "url": "https://takeuforward.org/data-structure/infix-to-postfix/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/convert-infix-expression-to-postfix-expression/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1"
       },
       "difficulty": "Medium"
     },

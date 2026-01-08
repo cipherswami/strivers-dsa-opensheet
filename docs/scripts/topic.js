@@ -101,12 +101,6 @@ import {
       localStorage.setItem(`topic-progress:${topicId}`, done);
       const localHash = await computeLocalHash();
       localStorage.setItem("meta:syncHash", localHash);
-      await setDoc(
-        doc(db, "users", auth.currentUser.uid),
-        { "meta:syncHash": localHash },
-        { merge: true }
-      );
-
       /* ---------- cloud sync (flat keys) ---------- */
       if (auth.currentUser) {
         try {
@@ -116,10 +110,12 @@ import {
               ? {
                   [`problem-status:${topicId}:${problemId}`]: true,
                   [`topic-progress:${topicId}`]: done,
+                  [`meta:syncHash`]: localHash,
                 }
               : {
                   [`problem-status:${topicId}:${problemId}`]: deleteField(),
                   [`topic-progress:${topicId}`]: done,
+                  [`meta:syncHash`]: localHash,
                 },
             { merge: true }
           );

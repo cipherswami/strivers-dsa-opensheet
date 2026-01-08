@@ -9,7 +9,6 @@
   --muted: #94a3b8;
   --border: #1e293b;
   --accent: #38bdf8;
-
   --easy: #22c55e;
   --medium: #facc15;
   --hard: #ef4444;
@@ -55,7 +54,7 @@ a:hover {
 
 .back {
   display: inline-block;
-  margin-bottom: 20px; /* 👈 gap below Back */
+  margin-bottom: 20px;
   text-decoration: none;
   color: var(--accent);
   transition: text-shadow 0.2s ease, color 0.2s ease;
@@ -135,17 +134,102 @@ button:hover {
   border-color: var(--accent);
 }
 
+/* ----- Confirm Box ----- */
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.confirm-overlay.show {
+  opacity: 1;
+}
+
+.confirm-box {
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.confirm-yes {
+  background: var(--accent);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-no {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* ---- Mobile ---- */
 
-@media (max-width: 1330px) {
-  body {
-    padding-top: 20px;
-  }
-
+@media (max-width: 768px) {
   #toast-container {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
     bottom: 16px;
+  }
+
+  .toast {
+    text-align: center;
+  }
+
+  .confirm-overlay {
+    align-items: flex-end;
+  }
+
+  .confirm-box {
+    width: 90%;
+    max-width: none;
+    border-radius: 16px;
+    padding: 20px 16px 24px;
+    animation: slideUp 0.25s ease;
+    margin-bottom: 50px;
+  }
+
+  .confirm-actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .confirm-yes,
+  .confirm-no {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

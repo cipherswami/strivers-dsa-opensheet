@@ -46,9 +46,9 @@
   white-space: nowrap;
 }
 
-/* .topic-table thead tr {
+.topic-table thead tr {
   background: rgba(148, 163, 184, 0.03);
-} */
+}
 
 /* ---------- Alignment ---------- */
 
