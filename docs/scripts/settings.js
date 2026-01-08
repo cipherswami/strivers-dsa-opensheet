@@ -4,7 +4,7 @@
  */
 
 import { auth, db } from "./firebase.js";
-import { showToast } from "./main.js";
+import { confirmAsync, setPostToast, showToast } from "./main.js";
 import {
   onAuthStateChanged,
   updateProfile,
@@ -25,6 +25,14 @@ const deleteAccountBtn = document.getElementById("deleteAccount");
 
 /* ---------- State ---------- */
 let currentUser = null;
+
+/* ---------- POST TOAST --------- */
+const postToast = sessionStorage.getItem("POST_TOAST");
+if (postToast) {
+  const { message, type } = JSON.parse(postToast);
+  sessionStorage.removeItem("POST_TOAST");
+  showToast(message, type);
+}
 
 /* ---------- Auth State ---------- */
 onAuthStateChanged(auth, (user) => {
@@ -93,8 +101,8 @@ displayNameInput.addEventListener("keydown", (e) => {
 
 /* Reset progress */
 resetProgressBtn.addEventListener("click", async () => {
-  const ok = confirm(
-    "This will erase ALL progress.\nThis action cannot be undone.\n\nContinue?"
+  const ok = await confirmAsync(
+    "This will erase ALL progress. This action cannot be undone, Continue?"
   );
 
   if (!ok) return;
@@ -103,12 +111,9 @@ resetProgressBtn.addEventListener("click", async () => {
     if (currentUser) {
       await deleteDoc(doc(db, "users", currentUser.uid));
     }
-
-    showToast("Progress nuked successfully", "info");
     localStorage.clear();
-    setTimeout(() => {
-      window.location.href = "settings.html";
-    }, 3000);
+    setPostToast("Progress nuked successfully", "info");
+    window.location.href = "settings.html";
   } catch (err) {
     console.error(err);
     showToast("Failed to reset progress", "error");
@@ -119,8 +124,8 @@ resetProgressBtn.addEventListener("click", async () => {
 deleteAccountBtn.addEventListener("click", async () => {
   if (!currentUser) return;
 
-  const ok = confirm(
-    "This will permanently delete your account.\n\nThis CANNOT be undone.\n\nContinue?"
+  const ok = await confirmAsync(
+    "This will permanently delete your account.\n\nThis CANNOT be undone, Continue?"
   );
 
   if (!ok) return;
@@ -129,6 +134,7 @@ deleteAccountBtn.addEventListener("click", async () => {
     await deleteDoc(doc(db, "users", currentUser.uid));
     await deleteUser(currentUser);
     localStorage.clear();
+    setPostToast("Account deleted", "info");
     window.location.href = "index.html";
   } catch (err) {
     console.error(err);

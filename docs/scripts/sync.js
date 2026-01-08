@@ -4,6 +4,7 @@
  */
 
 import { auth, db } from "./firebase.js";
+import { showToast } from "./main.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import {
   getDoc,
@@ -14,29 +15,37 @@ import {
 /* ---------- DOM ---------- */
 const userName = document.getElementById("userName");
 const userPic = document.getElementById("userPic");
-
-/* ---------- session guard key ---------- */
-export const IS_SYNC_DONE = "SYNC_DONE";
+const authBtn = document.getElementById("authBtn");
 
 /* ---------- Auth state ---------- */
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
     /* ---------- Guest UI ---------- */
-    userName.textContent = localStorage.getItem("displayName") || "Guest User";
-    userPic.src = "assets/guest.png";
-    authBtn.textContent = "Login";
-    sessionStorage.removeItem(IS_SYNC_DONE);
+    const displayName = localStorage.getItem("displayName");
+    if (displayName) {
+      userName.textContent = displayName;
+    }
     return;
   }
 
   /* ---------- Logged-in UI ---------- */
-  userName.textContent = user.displayName || "Striver Jr";
-  userPic.src = user.photoURL || "assets/guest.png";
-  authBtn.textContent = "Logout";
+  try {
+    userName.textContent = user.displayName || "Striver Jr";
+    userPic.src = user.photoURL || "assets/guest.png";
+    authBtn.textContent = "Logout";
+  } catch (e) {
+    console.error(e);
+  }
+
+  /* Show SYNC successful toast */
+  if (sessionStorage.getItem("SHOW_SYNC_SUCCESS")) {
+    sessionStorage.removeItem("SHOW_SYNC_SUCCESS");
+    showToast("SYNC Done", "success");
+  }
 
   /* ---------- Sync Guard: run sync once per session ---------- */
-  if (sessionStorage.getItem(IS_SYNC_DONE)) return;
-  sessionStorage.setItem(IS_SYNC_DONE, true);
+  if (sessionStorage.getItem("SYNC_ONCE")) return;
+  sessionStorage.setItem("SYNC_ONCE", true);
 
   const ref = doc(db, "users", user.uid);
   const snap = await getDoc(ref);
@@ -44,7 +53,7 @@ onAuthStateChanged(auth, async (user) => {
   /* ------------- Stage Guard: run sync only if data changes */
   const localHash = localStorage.getItem("meta:syncHash");
   const cloudHash = snap.exists() ? snap.data()?.["meta:syncHash"] : null;
-  if (cloudHash === localHash) return;
+  if (localHash && cloudHash === localHash) return;
 
   /* ---------- SYNC: cloud ⇄ local (ONCE PER LOGIN) ---------- */
   try {
@@ -105,6 +114,7 @@ onAuthStateChanged(auth, async (user) => {
     await setDoc(ref, { "meta:syncHash": localHash }, { merge: true });
 
     // To update UI
+    sessionStorage.setItem("SHOW_SYNC_SUCCESS", true);
     location.reload();
   } catch (err) {
     console.error("Login sync failed:", err);

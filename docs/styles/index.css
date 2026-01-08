@@ -4,7 +4,7 @@
  */
 
 .section:first-of-type {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .section > h2 {
@@ -55,12 +55,100 @@
   background: rgba(148, 163, 184, 0.06);
 }
 
+/* ---- Auth Area ---- */
+#authArea {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+#loginBtn,
+#userBtn {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#loginBtn:hover,
+#userBtn:hover {
+  border-color: var(--accent);
+}
+
+/* ---- User Menu ---- */
+
+#userMenu {
+  position: relative;
+}
+
+#userBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#userBtn .caret {
+  font-size: 1.5rem;
+  color: var(--muted);
+  margin-left: 2px;
+}
+
+#userPic {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ---- Dropdown ---- */
+
+#dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 160px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+#dropdown button {
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding: 10px 14px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+#dropdown button:hover {
+  background: var(--border);
+}
+
+.hidden {
+  display: none;
+}
+
 /* ---- Mobile ---- */
 
-@media (max-width: 1300) {
-  .section:first-of-type {
-    margin-top: 0px;
+@media (max-width: 1450px) {
+  #authArea {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
   }
+
+  .section:first-of-type {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
   .section > h2,
   .topics-table {
     width: 100%;
