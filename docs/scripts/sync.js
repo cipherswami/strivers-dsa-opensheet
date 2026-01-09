@@ -4,7 +4,7 @@
  */
 
 import { auth, db } from "./firebase.js";
-import { showToast } from "./main.js";
+import { computeLocalHash, setPostToast } from "./main.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import {
   getDoc,
@@ -35,12 +35,6 @@ onAuthStateChanged(auth, async (user) => {
     authBtn.textContent = "Logout";
   } catch (e) {
     console.error(e);
-  }
-
-  /* Show SYNC successful toast */
-  if (sessionStorage.getItem("SHOW_SYNC_SUCCESS")) {
-    sessionStorage.removeItem("SHOW_SYNC_SUCCESS");
-    showToast("SYNC Done", "success");
   }
 
   /* ---------- Sync Guard: run sync once per session ---------- */
@@ -111,12 +105,14 @@ onAuthStateChanged(auth, async (user) => {
     }
 
     /* 6. Push syncHash to cloud */
-    await setDoc(ref, { "meta:syncHash": localHash }, { merge: true });
+    const newHash = await computeLocalHash();
+    localStorage.setItem("meta:syncHash", newHash);
+    await setDoc(ref, { "meta:syncHash": newHash }, { merge: true });
 
     // To update UI
-    sessionStorage.setItem("SHOW_SYNC_SUCCESS", true);
+    setPostToast("SYNC Successful", "success");
     location.reload();
   } catch (err) {
-    console.error("Login sync failed:", err);
+    console.error("Sync failed:", err);
   }
 });
