@@ -6,6 +6,10 @@ A free DSA practice sheet inspired by [Raj Vikramaditya (Striver)](https://www.l
 
 For more structured learning with video tutorials, visit [takeuforward.org](https://takeuforward.org).
 
+## NOTICE
+
+Free resources and practice problems for many of the probelms still needs to be added.
+
 ## Credits
 
 Special thanks to Striver for creating an incredible resource for the programming community!
