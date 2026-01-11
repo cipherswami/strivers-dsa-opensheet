@@ -14,12 +14,12 @@
         "url": "https://takeuforward.org/data-structure/implement-stack-using-array/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/implement-stack-using-array/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/implement-stack-using-array/1"
       },
       "difficulty": "Easy"
     },
@@ -35,12 +35,12 @@
         "url": "https://takeuforward.org/data-structure/implement-queue-using-array/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/array-implementation-of-queue-simple/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/implement-queue-using-array/1"
       },
       "difficulty": "Easy"
     },
@@ -56,8 +56,8 @@
         "url": "https://takeuforward.org/data-structure/implement-stack-using-single-queue/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/implement-stack-using-queue/"
       },
       "practice": {
         "label": "LeetCode",
@@ -77,8 +77,8 @@
         "url": "https://takeuforward.org/data-structure/implement-queue-using-stack/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/queue-using-stacks/"
       },
       "practice": {
         "label": "LeetCode",
@@ -98,12 +98,12 @@
         "url": "https://takeuforward.org/data-structure/implement-stack-using-linked-list/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/implement-a-stack-using-singly-linked-list/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1"
       },
       "difficulty": "Easy"
     },
@@ -119,12 +119,12 @@
         "url": "https://takeuforward.org/data-structure/implement-queue-using-linked-list/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/queue-linked-list-implementation/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1"
       },
       "difficulty": "Easy"
     },
@@ -140,8 +140,8 @@
         "url": "https://takeuforward.org/data-structure/check-for-balanced-parentheses/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/check-for-balanced-parentheses-in-an-expression/"
       },
       "practice": {
         "label": "LeetCode",
@@ -161,8 +161,8 @@
         "url": "https://takeuforward.org/data-structure/implement-min-stack-o2n-and-on-space-complexity/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/"
       },
       "practice": {
         "label": "LeetCode",
