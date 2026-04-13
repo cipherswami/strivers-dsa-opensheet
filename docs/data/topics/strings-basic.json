@@ -6,16 +6,16 @@
       "problem-id": 1,
       "name": "Remove outermost Paranthesis",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Runtime Error)",
+        "url": "https://www.youtube.com/watch?v=gHHQ166-ZYk&t=14s"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/remove-outermost-parentheses"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/reduce-string-by-removing-outermost-parenthesis-from-each-primitive-substring/"
       },
       "practice": {
         "label": "LeetCode",
@@ -27,16 +27,16 @@
       "problem-id": 2,
       "name": "Reverse words in a given string / Palindrome Check",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Apna College)",
+        "url": "https://www.youtube.com/watch?v=RitppzIdMCo"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/reverse-words-in-a-string/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/reverse-words-in-a-given-string/"
       },
       "practice": {
         "label": "LeetCode",
@@ -48,16 +48,16 @@
       "problem-id": 3,
       "name": "Largest odd number in a string",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Ayushi Sharma)",
+        "url": "https://www.youtube.com/watch?v=eICBvqI4qTE"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/largest-odd-number-in-a-string"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/find-the-largest-odd-number-in-string/"
       },
       "practice": {
         "label": "LeetCode",
@@ -69,16 +69,16 @@
       "problem-id": 4,
       "name": "Longest Common Prefix",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Nikhil Lohia)",
+        "url": "https://www.youtube.com/watch?v=wtOQaovlvhY"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/longest-common-prefix"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/longest-common-prefix-using-sorting/"
       },
       "practice": {
         "label": "LeetCode",
@@ -90,16 +90,16 @@
       "problem-id": 5,
       "name": "Isomorphic String",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Ayushi Sharma)",
+        "url": "https://www.youtube.com/watch?v=sKaqSCXul0k"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/isomorphic-string"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/check-if-two-given-strings-are-isomorphic-to-each-other/"
       },
       "practice": {
         "label": "LeetCode",
@@ -111,16 +111,16 @@
       "problem-id": 6,
       "name": "check whether one string is a rotation of another",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Nick White)",
+        "url": "https://www.youtube.com/watch?v=kP2cpOPNYRc"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/check-if-one-string-is-rotation-of-another"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/a-program-to-check-if-strings-are-rotations-of-each-other/"
       },
       "practice": {
         "label": "LeetCode",
@@ -132,16 +132,16 @@
       "problem-id": 7,
       "name": "Check if two strings are anagram of each other",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Ayushi Sharma)",
+        "url": "https://www.youtube.com/watch?v=kF7HXifK4a8"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/check-if-two-strings-are-anagrams-of-each-other/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/check-whether-two-strings-are-anagram-of-each-other/"
       },
       "practice": {
         "label": "LeetCode",
@@ -153,16 +153,16 @@
       "problem-id": 8,
       "name": "Sort Characters by frequency",
       "video": {
-        "label": "YouTube (Striver)",
-        "url": ""
+        "label": "YouTube (Aryan Mittal)",
+        "url": "https://www.youtube.com/watch?v=WYjTKQEWbVQ"
       },
       "resource": {
         "label": "TakeUForward",
         "url": "https://takeuforward.org/data-structure/sort-characters-by-frequency"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/sort-a-string-according-to-the-frequency-of-characters/"
       },
       "practice": {
         "label": "LeetCode",
