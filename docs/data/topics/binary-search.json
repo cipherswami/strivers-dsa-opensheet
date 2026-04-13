@@ -203,8 +203,8 @@
         "url": "https://takeuforward.org/data-structure/minimum-in-rotated-sorted-array/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/find-minimum-element-in-a-sorted-and-rotated-array/"
       },
       "practice": {
         "label": "LeetCode",
@@ -224,12 +224,12 @@
         "url": "https://takeuforward.org/arrays/find-out-how-many-times-the-array-has-been-rotated/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/find-rotation-count-rotated-sorted-array/"
       },
       "practice": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/problems/rotation4723/1"
       },
       "difficulty": "Easy"
     },
@@ -245,8 +245,8 @@
         "url": "https://takeuforward.org/data-structure/search-single-element-in-a-sorted-array/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/find-the-element-that-appears-once-in-a-sorted-array/"
       },
       "practice": {
         "label": "LeetCode",
@@ -266,12 +266,12 @@
         "url": "https://takeuforward.org/data-structure/peak-element-in-array/"
       },
       "reference": {
-        "label": "",
-        "url": ""
+        "label": "GfG",
+        "url": "https://www.geeksforgeeks.org/dsa/find-a-peak-in-a-given-array/"
       },
       "practice": {
         "label": "LeetCode",
-        "url": "https://leetcode.com/problems/find-peak-element/#:~:text=Find%20Peak%20Element%20%2D%20LeetCode&text=A%20peak%20element%20is%20an,to%20any%20of%20the%20peaks."
+        "url": "https://leetcode.com/problems/find-peak-element/"
       },
       "difficulty": "Medium"
     },
